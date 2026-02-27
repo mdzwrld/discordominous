@@ -10,7 +10,7 @@ export function OfferSection() {
     }
 
   return (
-    <section className="w-full scroll-mt-20">
+    <section id="offer" className="w-full scroll-mt-20">
       <div className="container mx-auto max-w-3xl px-4 md:px-6">
         <Card className="relative overflow-hidden border-2 border-primary bg-card shadow-2xl shadow-primary/20">
           <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-primary/[0.07]"></div>

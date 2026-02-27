@@ -4,12 +4,11 @@ import { CtaButton } from "@/components/cta-button"
 
 export function HeroSection() {
   const handleCtaClick = () => {
-    const offerTab = document.getElementById("offer")
-    offerTab?.scrollIntoView({
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
       behavior: "smooth",
       block: "center",
     })
-    offerTab?.click()
   }
 
   return (
