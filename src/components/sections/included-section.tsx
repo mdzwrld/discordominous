@@ -1,6 +1,7 @@
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
+import { CheckCircle2, XCircle } from "lucide-react"
 
 export function IncludedSection() {
   const handleCtaClick = () => {
@@ -59,30 +60,64 @@ export function IncludedSection() {
           Sem enrolação. Sem teoria desnecessária.
         </p>
 
-        <div className="mx-auto mt-12 max-w-2xl space-y-6 text-lg md:text-xl">
-          <h3 className="text-2xl font-bold uppercase tracking-wider text-foreground">
-            COM A ESTRUTURA CERTA NO DISCORD
-          </h3>
-          <p className="text-muted-foreground">
-            você cria renda recorrente previsível sem depender de algoritmo,
-            viral ou sorte.
-          </p>
-          <div className="space-y-2 font-semibold text-foreground">
-            <p>Os membros entram.</p>
-            <p>A comunidade engaja.</p>
-            <p>A receita se mantém.</p>
+        <div className="mx-auto mt-16 max-w-5xl">
+          <div className="text-center">
+            <h3 className="text-3xl font-bold uppercase tracking-wider text-foreground">
+              COM A ESTRUTURA CERTA NO DISCORD
+            </h3>
+            <p className="mt-4 text-xl text-muted-foreground">
+              você cria renda recorrente previsível sem depender de algoritmo,
+              viral ou sorte.
+            </p>
           </div>
-          <div className="space-y-2 text-muted-foreground">
-            <p>Sem começar do zero todo mês.</p>
-            <p>Sem instabilidade.</p>
-            <p>Sem caos.</p>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="rounded-xl border-2 border-destructive/20 bg-destructive/10 p-8 text-left">
+              <h4 className="text-2xl font-bold text-destructive-foreground">
+                O FIM DA IMPROVISAÇÃO
+              </h4>
+              <ul className="mt-6 space-y-4 text-lg">
+                <li className="flex items-start gap-3 text-muted-foreground">
+                  <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
+                  <span>Sem começar do zero todo mês.</span>
+                </li>
+                <li className="flex items-start gap-3 text-muted-foreground">
+                  <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
+                  <span>Sem instabilidade.</span>
+                </li>
+                <li className="flex items-start gap-3 text-muted-foreground">
+                  <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
+                  <span>Sem caos.</span>
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-xl border-2 border-primary/20 bg-primary/10 p-8 text-left">
+              <h4 className="text-2xl font-bold text-primary">
+                O INÍCIO DO CONTROLE
+              </h4>
+              <ul className="mt-6 space-y-4 text-lg text-foreground">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
+                  <span>Os membros entram.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
+                  <span>A comunidade engaja.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
+                  <span>A receita se mantém.</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <p className="text-xl font-bold text-foreground">
-            Você sai da improvisação.
-          </p>
-          <p className="text-2xl font-extrabold text-primary">
-            E assume o controle.
-          </p>
+          <div className="mt-12 text-center">
+            <p className="text-2xl font-bold text-foreground">
+              Você sai da improvisação.
+            </p>
+            <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-4xl font-extrabold text-transparent">
+              E assume o controle.
+            </p>
+          </div>
         </div>
       </div>
     </section>
