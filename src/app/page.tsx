@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/layout/navbar"
 import { HeroSection } from "@/components/sections/hero-section"
 import { TruthSection } from "@/components/sections/truth-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
@@ -13,7 +12,6 @@ import { SocialProofSection } from "@/components/sections/social-proof-section"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Navbar />
       <HeroSection />
 
       <div className="flex w-full flex-col items-center space-y-16 py-16 md:space-y-24 md:py-24">
