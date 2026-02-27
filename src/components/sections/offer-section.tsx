@@ -45,7 +45,7 @@ export function OfferSection() {
               <div className="mt-6 flex flex-col items-center justify-center gap-3 text-lg font-bold text-primary">
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
-                  <span>+ Fornecedores</span>
+                  <span>+FORNECEDORES</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
