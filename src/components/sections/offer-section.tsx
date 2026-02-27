@@ -46,12 +46,12 @@ export function OfferSection() {
 
             <div className="my-6">
               <span className="text-7xl font-extrabold md:text-8xl">
-                R$ 67,00
+                R$ 36,79
               </span>
             </div>
             <p className="text-lg font-semibold text-muted-foreground">
               Pagamento único ou{" "}
-              <span className="text-foreground">12x de R$ 6,93</span>
+              <span className="text-foreground">12x de R$ 3,81</span>
             </p>
 
             <div className="mt-8">
