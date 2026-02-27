@@ -8,11 +8,17 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -55,16 +61,6 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
-        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -93,6 +89,10 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      backgroundImage: {
+        'grid-white/[0.05]': 'linear-gradient(90deg, transparent 24px, rgba(255, 255, 255, 0.05) 25px, rgba(255, 255, 255, 0.05) 26px, transparent 27px, transparent 79px), linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px)',
+        'grid-primary/[0.07]': 'linear-gradient(90deg, transparent 24px, hsl(var(--primary) / 0.07) 25px, hsl(var(--primary) / 0.07) 26px, transparent 27px, transparent 79px), linear-gradient(hsl(var(--primary) / 0.07) 1px, transparent 1px)',
+      }
     },
   },
   plugins: [require('tailwindcss-animate')],

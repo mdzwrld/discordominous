@@ -1,0 +1,36 @@
+export function TruthSection() {
+  return (
+    <section className="container mx-auto max-w-4xl px-4 md:px-6">
+      <div className="text-center">
+        <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
+          A VERDADE QUE NÃO TE CONTAM
+        </h2>
+        <p className="mx-auto mt-6 max-w-2xl text-2xl font-bold md:text-3xl">
+          O dinheiro não está na audiência aberta.
+          <br />
+          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Está no CONTROLE.
+          </span>
+        </p>
+        <div className="mt-8 space-y-4 text-lg md:text-xl">
+          <p className="text-muted-foreground">
+            Quem controla o ambiente, controla a atenção.
+            <br />
+            <span className="font-semibold text-foreground">
+              Quem controla a atenção, controla o dinheiro.
+            </span>
+          </p>
+          <p className="text-muted-foreground">
+            Discord é a ferramenta.{" "}
+            <span className="font-semibold text-foreground">
+              Estrutura é o jogo.
+            </span>
+          </p>
+          <p className="mt-6 font-bold text-foreground">
+            E quase ninguém sabe estruturar da forma certa.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}

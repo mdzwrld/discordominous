@@ -1,3 +1,70 @@
+import { Navbar } from "@/components/layout/navbar"
+import { HeroSection } from "@/components/sections/hero-section"
+import { PainSection } from "@/components/sections/pain-section"
+import { TruthSection } from "@/components/sections/truth-section"
+import { ComparisonSection } from "@/components/sections/comparison-section"
+import { ProofSection } from "@/components/sections/proof-section"
+import { PainsListSection } from "@/components/sections/pains-list-section"
+import { MethodSection } from "@/components/sections/method-section"
+import { IncludedSection } from "@/components/sections/included-section"
+import { AiToolSection } from "@/components/sections/ai-tool-section"
+import { WarningSection } from "@/components/sections/warning-section"
+import { OfferSection } from "@/components/sections/offer-section"
+import { GuaranteeSection } from "@/components/sections/guarantee-section"
+import { FinalCtaSection } from "@/components/sections/final-cta-section"
+import { FadeIn } from "@/components/fade-in"
+
 export default function Home() {
-  return <></>;
+  return (
+    <main className="flex min-h-screen flex-col items-center">
+      <Navbar />
+      <HeroSection />
+      <div className="flex w-full flex-col items-center space-y-16 md:space-y-24 lg:space-y-32">
+        <FadeIn>
+          <PainSection />
+        </FadeIn>
+        <FadeIn>
+          <TruthSection />
+        </FadeIn>
+        <FadeIn>
+          <ComparisonSection />
+        </FadeIn>
+        <FadeIn>
+          <ProofSection />
+        </FadeIn>
+        <FadeIn>
+          <PainsListSection />
+        </FadeIn>
+        <FadeIn>
+          <MethodSection />
+        </FadeIn>
+        <FadeIn>
+          <IncludedSection />
+        </FadeIn>
+        <FadeIn>
+          <AiToolSection />
+        </FadeIn>
+        <FadeIn>
+          <WarningSection />
+        </FadeIn>
+        <FadeIn>
+          <OfferSection />
+        </FadeIn>
+        <FadeIn>
+          <GuaranteeSection />
+        </FadeIn>
+        <FadeIn>
+          <FinalCtaSection />
+        </FadeIn>
+      </div>
+      <footer className="container mx-auto py-16 text-center text-muted-foreground">
+        <p>
+          Quem depende de algoritmo pede permissão.
+        </p>
+        <p className="font-bold text-foreground">
+          Quem constrói comunidade manda no próprio jogo.
+        </p>
+      </footer>
+    </main>
+  )
 }
