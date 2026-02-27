@@ -9,6 +9,7 @@ import { AiToolSection } from "@/components/sections/ai-tool-section"
 import { WarningSection } from "@/components/sections/warning-section"
 import { OfferSection } from "@/components/sections/offer-section"
 import { GuaranteeSection } from "@/components/sections/guarantee-section"
+import { SocialProofSection } from "@/components/sections/social-proof-section"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <ComparisonSection />
         <ProofSection />
         <MethodSection />
+        <SocialProofSection />
         <IncludedSection />
         <AiToolSection />
         <OfferSection />
