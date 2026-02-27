@@ -14,45 +14,59 @@
     },
     {
       "id": "testimonial-1",
-      "imageUrl": "https://picsum.photos/seed/t1/350/550",
+      "imageUrl": "https://i.imgur.com/QMVRT8V.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 371,
+      "height": 507
     },
     {
       "id": "testimonial-2",
-      "imageUrl": "https://picsum.photos/seed/t2/350/550",
+      "imageUrl": "https://i.imgur.com/VnpHHoj.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 375,
+      "height": 131
     },
     {
       "id": "testimonial-3",
-      "imageUrl": "https://picsum.photos/seed/t3/350/550",
+      "imageUrl": "https://i.imgur.com/mK1GskW.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 371,
+      "height": 153
     },
     {
       "id": "testimonial-4",
-      "imageUrl": "https://picsum.photos/seed/t4/350/550",
+      "imageUrl": "https://i.imgur.com/NG2D4Jf.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 374,
+      "height": 121
     },
     {
       "id": "testimonial-5",
-      "imageUrl": "https://picsum.photos/seed/t5/350/550",
+      "imageUrl": "https://i.imgur.com/pqnfEQt.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 371,
+      "height": 193
     },
     {
       "id": "testimonial-6",
-      "imageUrl": "https://picsum.photos/seed/t6/350/550",
+      "imageUrl": "https://i.imgur.com/1iExjmn.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 375,
+      "height": 105
     },
     {
       "id": "testimonial-7",
       "imageUrl": "https://picsum.photos/seed/t7/350/550",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial."
+      "description": "Screenshot of a positive testimonial.",
+      "width": 350,
+      "height": 550
     }
   ]
 }
