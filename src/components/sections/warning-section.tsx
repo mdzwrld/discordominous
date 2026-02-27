@@ -46,7 +46,10 @@ export function WarningSection() {
         <p className="text-lg text-muted-foreground md:text-xl">
           Isso é para quem quer <span className="font-bold text-primary">construir um ativo.</span>
         </p>
-        <p className="mt-6 text-2xl font-bold">SE VOCÊ ENTENDEU O JOGO</p>
+      </div>
+
+      <div className="mt-8 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
+        <p className="text-2xl font-bold">SE VOCÊ ENTENDEU O JOGO</p>
         <p className="mt-4 text-lg text-muted-foreground md:text-xl">
           Você já percebeu que:
           <br />
@@ -57,15 +60,13 @@ export function WarningSection() {
         <p className="mt-4 text-xl font-bold">
             E controle = <span className="text-primary">lucro previsível.</span>
         </p>
-      </div>
 
-      <div className="mt-12 text-center">
-        <p className="mb-6 text-lg font-semibold text-foreground md:text-xl">
+        <p className="mt-12 mb-6 text-lg font-semibold text-foreground md:text-xl">
           👉 CLICA NO BOTÃO AQUI EMBAIXO E GARANTE SEU ACESSO ANTES QUE O PREÇO MUDE.
         </p>
         <CtaButton
           onClick={handleCtaClick}
-          className="w-full max-w-lg transform p-8 text-xl"
+          className="w-full max-w-lg transform p-8 text-base"
         >
           CRIAR MINHA RENDA RECORRENTE NO DISCORD AGORA
         </CtaButton>
