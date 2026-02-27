@@ -16,57 +16,43 @@
       "id": "testimonial-1",
       "imageUrl": "https://i.imgur.com/QMVRT8V.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 371,
-      "height": 507
+      "description": "Depoimento sobre o método.",
+      "comment": "“...o nível de organização que você passa, a hierarquia, a forma que você trata os membros... é simplesmente surreal.”"
     },
     {
       "id": "testimonial-2",
       "imageUrl": "https://i.imgur.com/VnpHHoj.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 375,
-      "height": 131
+      "description": "Depoimento sobre o método.",
+      "comment": "“A forma como o conteúdo é organizado é surreal... é o melhor que já vi até hoje.”"
     },
     {
       "id": "testimonial-3",
       "imageUrl": "https://i.imgur.com/mK1GskW.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 371,
-      "height": 153
+      "description": "Depoimento sobre o método.",
+      "comment": "“Nunca vi um Discord tão bem organizado, bonito e com um design tão impecável.”"
     },
     {
       "id": "testimonial-4",
       "imageUrl": "https://i.imgur.com/NG2D4Jf.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 374,
-      "height": 121
+      "description": "Depoimento sobre o método.",
+      "comment": "“Parabéns pelo trabalho, está excelente. Valeu cada centavo.”"
     },
     {
       "id": "testimonial-5",
       "imageUrl": "https://i.imgur.com/pqnfEQt.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 371,
-      "height": 193
+      "description": "Depoimento sobre o método.",
+      "comment": "“A organização do servidor está fantástica, muito fácil de navegar e encontrar o que preciso.”"
     },
     {
       "id": "testimonial-6",
       "imageUrl": "https://i.imgur.com/1iExjmn.png",
       "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 375,
-      "height": 105
-    },
-    {
-      "id": "testimonial-7",
-      "imageUrl": "https://picsum.photos/seed/t7/350/550",
-      "imageHint": "testimonial screenshot",
-      "description": "Screenshot of a positive testimonial.",
-      "width": 350,
-      "height": 550
+      "description": "Depoimento sobre o método.",
+      "comment": "“Obrigado por esse conteúdo, está me ajudando muito a estruturar minha própria comunidade.”"
     }
   ]
 }

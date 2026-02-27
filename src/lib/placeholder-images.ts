@@ -7,6 +7,7 @@ export type ImagePlaceholder = {
   imageHint: string;
   width?: number;
   height?: number;
+  comment?: string;
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;

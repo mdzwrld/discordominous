@@ -28,9 +28,6 @@ const testimonials = [
   {
     image: PlaceHolderImages.find((p) => p.id === "testimonial-6"),
   },
-  {
-    image: PlaceHolderImages.find((p) => p.id === "testimonial-7"),
-  },
 ]
 
 export function SocialProofSection() {
@@ -51,26 +48,35 @@ export function SocialProofSection() {
           className="mt-12 w-full"
         >
           <CarouselContent>
-            {testimonials.map((testimonial, index) => (
-              testimonial.image && (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex flex-col items-center justify-center p-4">
-                        <Image
-                          src={testimonial.image.imageUrl}
-                          alt={testimonial.image.description}
-                          data-ai-hint={testimonial.image.imageHint}
-                          width={testimonial.image.width || 350}
-                          height={testimonial.image.height || 550}
-                          className="rounded-lg"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              )
-            ))}
+            {testimonials.map(
+              (testimonial, index) =>
+                testimonial.image && (
+                  <CarouselItem
+                    key={index}
+                    className="md:basis-1/2 lg:basis-1/3"
+                  >
+                    <div className="p-1">
+                      <Card>
+                        <CardContent className="flex h-full flex-col items-center justify-start p-4">
+                          <Image
+                            src={testimonial.image.imageUrl}
+                            alt={testimonial.image.description}
+                            data-ai-hint={testimonial.image.imageHint}
+                            width={400}
+                            height={400}
+                            className="h-auto w-full rounded-lg"
+                          />
+                          {testimonial.image.comment && (
+                            <p className="mt-4 text-center text-sm italic text-muted-foreground">
+                              {testimonial.image.comment}
+                            </p>
+                          )}
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                )
+            )}
           </CarouselContent>
           <CarouselPrevious className="hidden md:flex" />
           <CarouselNext className="hidden md:flex" />
