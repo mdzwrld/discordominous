@@ -11,6 +11,7 @@ const includedItems = [
   "Scripts internos de posicionamento",
   "Estratégia de crescimento",
   "Plano de execução direto ao ponto",
+  "+ Fornecedores",
 ]
 
 export function OfferSection() {
