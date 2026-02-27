@@ -7,7 +7,7 @@ export function ProofSection() {
         Foi assim que fiz:
       </p>
       <h2 className="my-4 text-4xl font-extrabold tracking-tighter text-primary md:text-6xl">
-        R$ 150.221,22 em 4 meses.
+        R$ 150.221,22 em 3 meses.
       </h2>
       <p className="text-lg text-muted-foreground md:text-xl">
         Sem hype. Sem lançamento. Sem depender de tráfego caro.
