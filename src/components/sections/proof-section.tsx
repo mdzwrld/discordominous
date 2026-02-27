@@ -1,9 +1,6 @@
 import Image from "next/image"
-import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 export function ProofSection() {
-  const proofImage = PlaceHolderImages.find(p => p.id === "revenue-screenshot")
-
   return (
     <section className="container mx-auto max-w-5xl px-4 text-center md:px-6">
       <p className="text-lg text-muted-foreground md:text-xl">
@@ -16,16 +13,14 @@ export function ProofSection() {
         Sem hype. Sem lançamento. Sem depender de tráfego caro.
       </p>
       <div className="mt-8">
-        {proofImage && (
-          <Image
-            src={proofImage.imageUrl}
-            alt={proofImage.description}
-            data-ai-hint={proofImage.imageHint}
-            width={1200}
-            height={675}
+        <Image
+            src="https://i.imgur.com/EmUlo3B.png"
+            alt="Interface do Discord mostrando mensagens e interações de usuários"
+            data-ai-hint="discord interface"
+            width={1000}
+            height={333}
             className="mx-auto rounded-xl border-2 border-border shadow-2xl"
-          />
-        )}
+        />
         <p className="mt-4 text-sm text-muted-foreground">
           (Prova visual sempre quebra objeção emocional)
         </p>
