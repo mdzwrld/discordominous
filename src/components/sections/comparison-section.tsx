@@ -1,5 +1,75 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { XCircle, CheckCircle2 } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { XCircle, CheckCircle2, type LucideIcon } from "lucide-react"
+
+interface ComparisonItemType {
+  type: string
+  icon: LucideIcon
+  items: string[]
+  cardClassName: string
+  titleClassName: string
+  iconClassName: string
+  listClassName: string
+}
+
+const comparisonItems: ComparisonItemType[] = [
+  {
+    type: "Amador",
+    icon: XCircle,
+    items: [
+      "Cria servidor e joga link na bio",
+      "Espera as pessoas comprarem",
+      "Some em 2 meses",
+    ],
+    cardClassName: "border-destructive/30 bg-destructive/10",
+    titleClassName: "text-destructive-foreground",
+    iconClassName: "text-destructive",
+    listClassName: "text-muted-foreground",
+  },
+  {
+    type: "Operador",
+    icon: CheckCircle2,
+    items: [
+      "Constrói ambiente fechado",
+      "Cria hierarquia",
+      "Posiciona oferta interna",
+      "Gera recorrência",
+      "Escala comunidade",
+    ],
+    cardClassName: "border-primary/30 bg-primary/10",
+    titleClassName: "text-primary-foreground",
+    iconClassName: "text-primary",
+    listClassName: "text-foreground",
+  },
+]
+
+const ComparisonCard = ({ item }: { item: ComparisonItemType }) => (
+  <Card className={`${item.cardClassName} h-full`}>
+    <CardHeader>
+      <CardTitle
+        className={`flex items-center gap-3 text-2xl font-bold ${item.titleClassName}`}
+      >
+        <item.icon className={`h-8 w-8 ${item.iconClassName}`} />
+        {item.type}
+      </CardTitle>
+    </CardHeader>
+    <CardContent>
+      <ul className={`space-y-3 text-lg ${item.listClassName}`}>
+        {item.items.map((text) => (
+          <li key={text} className="flex items-start gap-3">
+            <span>• {text}</span>
+          </li>
+        ))}
+      </ul>
+    </CardContent>
+  </Card>
+)
 
 export function ComparisonSection() {
   return (
@@ -10,55 +80,33 @@ export function ComparisonSection() {
         </h2>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-        <Card className="border-destructive/30 bg-destructive/10">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-2xl font-bold text-destructive-foreground">
-              <XCircle className="h-8 w-8 text-destructive" />
-              Amador
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-3 text-lg text-muted-foreground">
-              <li className="flex items-start gap-3">
-                <span>• Cria servidor e joga link na bio</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span>• Espera as pessoas comprarem</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span>• Some em 2 meses</span>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-        <Card className="border-primary/30 bg-primary/10">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-2xl font-bold text-primary-foreground">
-              <CheckCircle2 className="h-8 w-8 text-primary" />
-              Operador
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-3 text-lg text-foreground">
-              <li className="flex items-start gap-3">
-                <span>• Constrói ambiente fechado</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span>• Cria hierarquia</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span>• Posiciona oferta interna</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span>• Gera recorrência</span>
-              </li>
-               <li className="flex items-start gap-3">
-                <span>• Escala comunidade</span>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+      {/* Desktop view */}
+      <div className="mt-12 hidden grid-cols-2 items-stretch gap-8 md:grid">
+        {comparisonItems.map((item) => (
+          <ComparisonCard key={item.type} item={item} />
+        ))}
+      </div>
+
+      {/* Mobile view */}
+      <div className="mt-12 md:hidden">
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {comparisonItems.map((item, index) => (
+              <CarouselItem key={index}>
+                <div className="h-full p-1">
+                  <ComparisonCard item={item} />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   )
