@@ -57,7 +57,7 @@ export function OfferSection() {
             <div className="mt-8">
               <CtaButton
                 onClick={handleCtaClick}
-                className="w-full max-w-lg transform p-8 text-xl"
+                className="w-full max-w-lg transform p-8 text-base"
               >
                 CRIAR MINHA RENDA RECORRENTE NO DISCORD AGORA
               </CtaButton>
