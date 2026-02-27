@@ -11,7 +11,6 @@ const includedItems = [
   "Scripts internos de posicionamento",
   "Estratégia de crescimento",
   "Plano de execução direto ao ponto",
-  "+ Fornecedores",
 ]
 
 export function OfferSection() {
@@ -34,8 +33,8 @@ export function OfferSection() {
               Acesse o Escala Sem Esforço
             </h3>
 
-            <div className="my-8 text-left">
-              <ul className="grid grid-cols-1 gap-x-8 gap-y-4 text-lg sm:grid-cols-2">
+            <div className="my-8">
+              <ul className="grid grid-cols-1 gap-x-8 gap-y-4 text-left text-lg sm:grid-cols-2">
                 {includedItems.map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="h-6 w-6 flex-shrink-0 text-primary" />
@@ -43,6 +42,10 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 flex items-center justify-center gap-3 text-lg font-bold text-primary">
+                <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
+                <span>+ Fornecedores</span>
+              </div>
             </div>
 
             <div className="my-6">
