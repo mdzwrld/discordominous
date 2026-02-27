@@ -21,9 +21,6 @@ export function ProofSection() {
             height={333}
             className="mx-auto rounded-xl border-2 border-border shadow-2xl"
         />
-        <p className="mt-4 text-sm text-muted-foreground">
-          (Prova visual sempre quebra objeção emocional)
-        </p>
       </div>
     </section>
   )
