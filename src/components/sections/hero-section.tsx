@@ -1,6 +1,7 @@
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
+import Image from "next/image"
 
 export function HeroSection() {
   const handleCtaClick = () => {
@@ -22,6 +23,18 @@ export function HeroSection() {
         <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
           Sem aparecer. Sem depender de algoritmo. Sem implorar por engajamento.
         </p>
+
+        <div className="mt-10">
+            <Image
+                src="https://i.imgur.com/EmUlo3B.png"
+                alt="Interface do Discord mostrando mensagens e interações de usuários"
+                width={1000}
+                height={333}
+                className="mx-auto rounded-lg border border-border/20 shadow-xl"
+                data-ai-hint="discord interface"
+            />
+        </div>
+
         <div className="mt-10">
           <CtaButton
             onClick={handleCtaClick}
