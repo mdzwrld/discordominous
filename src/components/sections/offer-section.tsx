@@ -2,6 +2,16 @@
 
 import { CtaButton } from "@/components/cta-button"
 import { Card, CardContent } from "@/components/ui/card"
+import { CheckCircle2 } from "lucide-react"
+
+const includedItems = [
+    "Estrutura exata do servidor",
+    "Organização validada",
+    "Modelo de monetização recorrente",
+    "Scripts internos de posicionamento",
+    "Estratégia de crescimento",
+    "Plano de execução direto ao ponto",
+  ]
 
 export function OfferSection() {
     const handleCtaClick = () => {
@@ -22,6 +32,18 @@ export function OfferSection() {
             <p className="mt-4 text-lg text-muted-foreground">
               Acesso completo ao método:
             </p>
+            
+            <div className="my-8 text-left">
+                <ul className="grid grid-cols-1 gap-x-8 gap-y-4 text-lg sm:grid-cols-2">
+                    {includedItems.map(item => (
+                    <li key={item} className="flex items-center gap-3">
+                        <CheckCircle2 className="h-6 w-6 flex-shrink-0 text-primary" />
+                        <span className="font-medium">{item}</span>
+                    </li>
+                    ))}
+                </ul>
+            </div>
+
             <div className="my-6">
               <span className="text-7xl font-extrabold md:text-8xl">R$ 67,00</span>
             </div>
