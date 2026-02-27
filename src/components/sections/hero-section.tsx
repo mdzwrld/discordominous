@@ -1,6 +1,8 @@
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
+import { Button } from "@/components/ui/button"
+import { ChevronDown } from "lucide-react"
 
 export function HeroSection() {
   const handleCtaClick = () => {
@@ -11,11 +13,19 @@ export function HeroSection() {
     })
   }
 
+  const handleScrollDown = () => {
+    const truthSection = document.getElementById("truth-section")
+    truthSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+
   return (
     <section className="relative w-full overflow-hidden pt-32 pb-20 md:pt-48 md:pb-32">
       <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-white/[0.05]"></div>
       <div className="absolute inset-0 -z-20 bg-background bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      
+
       <div className="container mx-auto max-w-5xl px-4 text-center md:px-6">
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
           Como eu fiz <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$ 150.221,22 em 4 meses</span> usando APENAS O DISCORD.
@@ -36,6 +46,16 @@ export function HeroSection() {
           Enquanto a maioria tenta viralizar… <br />
           <span className="font-semibold text-foreground">Eu construí uma máquina privada de dinheiro. E é exatamente isso que ninguém quer que você entenda.</span>
         </p>
+      </div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={handleScrollDown}
+          className="animate-bounce"
+        >
+          <ChevronDown className="h-8 w-8" />
+        </Button>
       </div>
     </section>
   )

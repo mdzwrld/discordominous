@@ -1,6 +1,6 @@
 export function TruthSection() {
   return (
-    <section className="container mx-auto max-w-4xl px-4 md:px-6">
+    <section id="truth-section" className="container mx-auto max-w-4xl scroll-mt-20 px-4 md:px-6">
       <div className="text-center">
         <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
           A VERDADE QUE NÃO TE CONTAM
