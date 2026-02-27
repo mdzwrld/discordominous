@@ -59,7 +59,7 @@ export function OfferSection() {
                 onClick={handleCtaClick}
                 className="w-full max-w-lg transform p-8 text-xl"
               >
-                QUERO CONSTRUIR MINHA MÁQUINA NO DISCORD AGORA
+                CRIAR MINHA RENDA RECORRENTE NO DISCORD AGORA
               </CtaButton>
             </div>
             <p className="mt-6 text-muted-foreground">

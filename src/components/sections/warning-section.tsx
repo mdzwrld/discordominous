@@ -67,7 +67,7 @@ export function WarningSection() {
           onClick={handleCtaClick}
           className="w-full max-w-lg transform p-8 text-xl"
         >
-          QUERO CONSTRUIR MINHA MÁQUINA NO DISCORD AGORA
+          CRIAR MINHA RENDA RECORRENTE NO DISCORD AGORA
         </CtaButton>
         <div className="mt-6 space-y-2 text-sm text-muted-foreground">
           <p className="flex items-center justify-center gap-2">
