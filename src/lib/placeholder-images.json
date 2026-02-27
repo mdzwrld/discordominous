@@ -3,7 +3,7 @@
     {
       "id": "revenue-screenshot",
       "description": "A screenshot showing revenue of R$150,221.22 over 4 months.",
-      "imageUrl": "https://images.unsplash.com/photo-1761850167081-473019536383?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXNoYm9hcmQlMjBncmFwaHxlbnwwfHx8fDE3NzIxNjQ2OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/EmUlo3B.png",
       "imageHint": "dashboard graph"
     },
     {
@@ -11,6 +11,48 @@
       "description": "Open Graph image for Discord Dominus",
       "imageUrl": "https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGRhcmt8ZW58MHx8fHwxNzcyMTQwOTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract dark"
+    },
+    {
+      "id": "testimonial-1",
+      "imageUrl": "https://picsum.photos/seed/t1/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
+    },
+    {
+      "id": "testimonial-2",
+      "imageUrl": "https://picsum.photos/seed/t2/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
+    },
+    {
+      "id": "testimonial-3",
+      "imageUrl": "https://picsum.photos/seed/t3/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
+    },
+    {
+      "id": "testimonial-4",
+      "imageUrl": "https://picsum.photos/seed/t4/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
+    },
+    {
+      "id": "testimonial-5",
+      "imageUrl": "https://picsum.photos/seed/t5/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
+    },
+    {
+      "id": "testimonial-6",
+      "imageUrl": "https://picsum.photos/seed/t6/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
+    },
+    {
+      "id": "testimonial-7",
+      "imageUrl": "https://picsum.photos/seed/t7/350/550",
+      "imageHint": "testimonial screenshot",
+      "description": "Screenshot of a positive testimonial."
     }
   ]
 }

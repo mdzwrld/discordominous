@@ -1,54 +1,90 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
+import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const testimonials = [
   {
-    name: "João Silva",
-    handle: "@joaosilva",
-    avatarUrl: "https://i.imgur.com/8p8YQBq.png",
-    text: "O método é direto ao ponto. Consegui estruturar minha comunidade e tive meus primeiros 100 membros pagos em 15 dias. Surreal.",
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-1"),
+    text: "Mudei do IG pro Discord e a previsibilidade é outra. Faturamento estabilizou.",
   },
   {
-    name: "Maria Oliveira",
-    handle: "@mariaoliveira",
-    avatarUrl: "https://i.imgur.com/C32s4A0.png",
-    text: "Eu estava perdida, dependendo do alcance do Instagram. O Discord Dominus me deu o controle que eu precisava. Renda previsível, finalmente!",
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-2"),
+    text: "A estrutura dos canais fez toda a diferença. O engajamento aumentou e as vendas vieram.",
   },
   {
-    name: "Carlos Souza",
-    handle: "@carlossouza",
-    avatarUrl: "https://i.imgur.com/P2b23K0.png",
-    text: "Pensava que Discord era só para gamers. Quebrei a cara. A estrutura que aprendi aqui vale ouro. Recomendo pra qualquer criador de conteúdo.",
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-3"),
+    text: "Finalmente saí da roleta russa do tráfego pago. Ter meu próprio ambiente não tem preço.",
+  },
+  {
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-4"),
+    text: "O método é simples e direto. Em 3 semanas já tinha recuperado o investimento.",
+  },
+  {
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-5"),
+    text: "Discord parecia complexo, mas com o passo a passo ficou fácil. Melhor decisão que tomei.",
+  },
+  {
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-6"),
+    text: "Recorrência. Essa é a palavra. O jogo mudou completamente pra mim.",
+  },
+  {
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-7"),
+    text: "Ter o controle da minha base de clientes é libertador. Chega de depender de algoritmo.",
   },
 ]
 
 export function SocialProofSection() {
   return (
-    <section className="container mx-auto max-w-6xl px-4 md:px-6">
-      <div className="text-center">
-        <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
-          RESULTADO DE QUEM APLICOU
-        </h2>
-      </div>
+    <section className="w-full">
+      <div className="container mx-auto max-w-6xl px-4 md:px-6">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
+            RESULTADO DE QUEM APLICOU
+          </h2>
+        </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {testimonials.map((testimonial) => (
-          <Card key={testimonial.name} className="flex flex-col bg-card/50">
-            <CardHeader className="flex flex-row items-center gap-4">
-              <Avatar>
-                <AvatarImage src={testimonial.avatarUrl} alt={testimonial.name} data-ai-hint="avatar person" />
-                <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-              </Avatar>
-              <div>
-                <CardTitle className="text-lg font-bold">{testimonial.name}</CardTitle>
-                <p className="text-sm text-muted-foreground">{testimonial.handle}</p>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="italic text-foreground">"{testimonial.text}"</p>
-            </CardContent>
-          </Card>
-        ))}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="mt-12 w-full"
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+              testimonial.image && (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex flex-col items-center justify-center p-4">
+                        <Image
+                          src={testimonial.image.imageUrl}
+                          alt={testimonial.image.description}
+                          data-ai-hint={testimonial.image.imageHint}
+                          width={350}
+                          height={550}
+                          className="rounded-lg object-cover"
+                        />
+                        <p className="mt-4 text-center text-lg italic text-foreground">
+                          "{testimonial.text}"
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              )
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   )
