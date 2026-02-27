@@ -5,10 +5,12 @@ import Image from "next/image"
 
 export function HeroSection() {
   const handleCtaClick = () => {
-    document.getElementById("offer")?.scrollIntoView({
+    const offerTab = document.getElementById("offer")
+    offerTab?.scrollIntoView({
       behavior: "smooth",
       block: "center",
     })
+    offerTab?.click()
   }
 
   return (
@@ -18,7 +20,7 @@ export function HeroSection() {
       
       <div className="container mx-auto max-w-5xl px-4 text-center md:px-6">
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          R$ 150.221,22 EM 4 MESES USANDO <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">APENAS O DISCORD.</span>
+          Como eu fiz <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$ 150.221,22 em 4 meses</span> usando APENAS O DISCORD.
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
           Sem aparecer. Sem depender de algoritmo. Sem implorar por engajamento.
@@ -43,13 +45,10 @@ export function HeroSection() {
             QUERO CONSTRUIR MINHA MÁQUINA
           </CtaButton>
         </div>
-        <p className="mt-8 text-base text-muted-foreground">
+        <p className="mt-8 text-lg text-muted-foreground">
           Enquanto a maioria tenta viralizar… <br />
-          <span className="font-semibold text-foreground">Eu construí uma máquina privada de dinheiro.</span>
+          <span className="font-semibold text-foreground">Eu construí uma máquina privada de dinheiro. E é exatamente isso que ninguém quer que você entenda.</span>
         </p>
-         <div className="mt-12 text-center">
-            <p className="font-semibold text-foreground">E é exatamente isso que ninguém quer que você entenda.</p>
-        </div>
       </div>
     </section>
   )

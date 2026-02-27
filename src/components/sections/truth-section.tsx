@@ -6,10 +6,10 @@ export function TruthSection() {
           A VERDADE QUE NÃO TE CONTAM
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-2xl font-bold md:text-3xl">
-          O dinheiro não está na audiência aberta.
+          O dinheiro não está na audiência aberta que você não controla.
           <br />
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Está no CONTROLE.
+            Está no AMBIENTE que você controla.
           </span>
         </p>
         <div className="mt-8 space-y-4 text-lg md:text-xl">
@@ -27,7 +27,7 @@ export function TruthSection() {
             </span>
           </p>
           <p className="mt-6 font-bold text-foreground">
-            E quase ninguém sabe estruturar da forma certa.
+            E quase ninguém sabe estruturar da forma certa para extrair dinheiro.
           </p>
         </div>
       </div>

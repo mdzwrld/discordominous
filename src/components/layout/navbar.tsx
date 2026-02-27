@@ -18,10 +18,12 @@ export function Navbar() {
   }, [])
 
   const handleCtaClick = () => {
-    document.getElementById("offer")?.scrollIntoView({
+    const offerTab = document.getElementById("offer")
+    offerTab?.scrollIntoView({
       behavior: "smooth",
       block: "center",
     })
+    offerTab?.click()
   }
 
   return (
