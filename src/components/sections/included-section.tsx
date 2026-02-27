@@ -1,7 +1,6 @@
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
-import { Card, CardContent } from "@/components/ui/card"
 
 export function IncludedSection() {
   const handleCtaClick = () => {
@@ -59,6 +58,32 @@ export function IncludedSection() {
         <p className="mx-auto mt-8 max-w-xl text-lg text-muted-foreground">
           Sem enrolação. Sem teoria desnecessária.
         </p>
+
+        <div className="mx-auto mt-12 max-w-2xl space-y-6 text-lg md:text-xl">
+          <h3 className="text-2xl font-bold uppercase tracking-wider text-foreground">
+            COM A ESTRUTURA CERTA NO DISCORD
+          </h3>
+          <p className="text-muted-foreground">
+            você cria renda recorrente previsível sem depender de algoritmo,
+            viral ou sorte.
+          </p>
+          <div className="space-y-2 font-semibold text-foreground">
+            <p>Os membros entram.</p>
+            <p>A comunidade engaja.</p>
+            <p>A receita se mantém.</p>
+          </div>
+          <div className="space-y-2 text-muted-foreground">
+            <p>Sem começar do zero todo mês.</p>
+            <p>Sem instabilidade.</p>
+            <p>Sem caos.</p>
+          </div>
+          <p className="text-xl font-bold text-foreground">
+            Você sai da improvisação.
+          </p>
+          <p className="text-2xl font-extrabold text-primary">
+            E assume o controle.
+          </p>
+        </div>
       </div>
     </section>
   )
