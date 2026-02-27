@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/layout/navbar"
 import { HeroSection } from "@/components/sections/hero-section"
-import { PainSection } from "@/components/sections/pain-section"
 import { TruthSection } from "@/components/sections/truth-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
@@ -18,7 +17,6 @@ export default function Home() {
       <HeroSection />
 
       <div className="flex w-full flex-col items-center space-y-16 py-16 md:space-y-24 md:py-24">
-        <PainSection />
         <TruthSection />
         <ComparisonSection />
         <ProofSection />
