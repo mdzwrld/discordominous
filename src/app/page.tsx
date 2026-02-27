@@ -5,7 +5,6 @@ import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
 import { MethodSection } from "@/components/sections/method-section"
 import { IncludedSection } from "@/components/sections/included-section"
-import { AiToolSection } from "@/components/sections/ai-tool-section"
 import { WarningSection } from "@/components/sections/warning-section"
 import { OfferSection } from "@/components/sections/offer-section"
 import { GuaranteeSection } from "@/components/sections/guarantee-section"
@@ -24,7 +23,6 @@ export default function Home() {
         <MethodSection />
         <SocialProofSection />
         <IncludedSection />
-        <AiToolSection />
         <OfferSection />
         <WarningSection />
         <GuaranteeSection />
