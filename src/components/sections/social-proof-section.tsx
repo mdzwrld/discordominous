@@ -67,7 +67,7 @@ export function SocialProofSection() {
                             className="h-auto w-full rounded-lg"
                           />
                           {testimonial.image.comment && (
-                            <p className="mt-4 text-center text-sm italic text-muted-foreground">
+                            <p className="mt-4 text-center text-base font-medium text-foreground">
                               {testimonial.image.comment}
                             </p>
                           )}
