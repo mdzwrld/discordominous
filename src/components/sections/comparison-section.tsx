@@ -1,11 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import { XCircle, CheckCircle2, type LucideIcon } from "lucide-react"
 
 interface ComparisonItemType {
@@ -88,25 +81,10 @@ export function ComparisonSection() {
       </div>
 
       {/* Mobile view */}
-      <div className="mt-12 md:hidden">
-        <Carousel
-          opts={{
-            align: "start",
-          }}
-          className="w-full"
-        >
-          <CarouselContent>
-            {comparisonItems.map((item, index) => (
-              <CarouselItem key={index}>
-                <div className="h-full p-1">
-                  <ComparisonCard item={item} />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+      <div className="mt-12 flex flex-col gap-8 md:hidden">
+        {comparisonItems.map((item) => (
+          <ComparisonCard key={item.type} item={item} />
+        ))}
       </div>
     </section>
   )
