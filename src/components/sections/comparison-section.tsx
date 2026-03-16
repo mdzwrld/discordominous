@@ -43,7 +43,7 @@ const comparisonItems: ComparisonItemType[] = [
       "Escala comunidade",
     ],
     cardClassName: "border-primary/30 bg-primary/10",
-    titleClassName: "text-primary-foreground",
+    titleClassName: "text-foreground",
     iconClassName: "text-primary",
     listClassName: "text-foreground",
   },
