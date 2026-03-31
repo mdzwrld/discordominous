@@ -26,7 +26,7 @@ const comparisonItems: ComparisonItemType[] = [
     listClassName: "text-muted-foreground",
   },
   {
-    type: "Operador",
+    type: "Profissional",
     icon: CheckCircle2,
     items: [
       "Constrói ambiente fechado",
@@ -69,7 +69,7 @@ export function ComparisonSection() {
     <section className="container mx-auto max-w-5xl px-4 md:px-6">
       <div className="text-center">
         <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
-          A DIFERENÇA ENTRE AMADOR E OPERADOR
+          A DIFERENÇA ENTRE AMADOR E PROFISSIONAL
         </h2>
       </div>
 
