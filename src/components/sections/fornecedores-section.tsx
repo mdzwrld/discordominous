@@ -163,7 +163,7 @@ export function FornecedoresSection() {
         <div className="text-center">
           <CtaButton
             onClick={handleCtaClick}
-            className="w-full max-w-2xl p-8 text-xl"
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-lg md:p-8 md:text-xl"
           >
             👉 QUERO A ESTRUTURA + OS PRODUTOS QUE VENDEM
           </CtaButton>
