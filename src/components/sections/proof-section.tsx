@@ -12,7 +12,7 @@ export function ProofSection() {
         <p className="pt-4 font-semibold text-foreground">
           Veio de um sistema simples:
         </p>
-        <ul className="mx-auto max-w-md list-inside list-disc space-y-1 pt-2 text-left">
+        <ul className="mx-auto max-w-md list-none space-y-1 pt-2 text-center">
           <li>Pessoas entram no ambiente</li>
           <li>São guiadas por uma estrutura</li>
           <li>Consomem conteúdo com intenção</li>
