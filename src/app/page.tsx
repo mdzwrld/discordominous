@@ -4,6 +4,7 @@ import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
 import { MethodSection } from "@/components/sections/method-section"
 import { HowItWorksSection } from "@/components/sections/how-it-works-section"
+import { FornecedoresSection } from "@/components/sections/fornecedores-section"
 import { IncludedSection } from "@/components/sections/included-section"
 import { WarningSection } from "@/components/sections/warning-section"
 import { OfferSection } from "@/components/sections/offer-section"
@@ -21,6 +22,7 @@ export default function Home() {
         <ProofSection />
         <MethodSection />
         <HowItWorksSection />
+        <FornecedoresSection />
         <SocialProofSection />
         <IncludedSection />
         <OfferSection />
@@ -29,9 +31,7 @@ export default function Home() {
       </div>
 
       <footer className="container mx-auto py-16 text-center text-muted-foreground">
-        <p>
-          Quem depende de algoritmo pede permissão.
-        </p>
+        <p>Quem depende de algoritmo pede permissão.</p>
         <p className="font-bold text-foreground">
           Quem constrói comunidade manda no próprio jogo.
         </p>
