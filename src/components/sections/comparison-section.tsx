@@ -18,7 +18,8 @@ const comparisonItems: ComparisonItemType[] = [
     items: [
       "Cria servidor e joga link na bio",
       "Espera as pessoas comprarem",
-      "Some em 2 meses",
+      "Não tem oferta clara",
+      "Some quando não vende",
     ],
     cardClassName: "border-destructive/30 bg-destructive/10",
     titleClassName: "text-destructive-foreground",
@@ -26,14 +27,13 @@ const comparisonItems: ComparisonItemType[] = [
     listClassName: "text-muted-foreground",
   },
   {
-    type: "Profissional",
+    type: "👉 Estruturado",
     icon: CheckCircle2,
     items: [
-      "Constrói ambiente fechado",
-      "Cria hierarquia",
-      "Posiciona oferta interna",
-      "Gera recorrência",
-      "Escala comunidade",
+      "Monta um ambiente com caminho definido",
+      "Guia o membro até a oferta",
+      "Vende dentro da comunidade todos os dias",
+      "Gera recorrência previsível",
     ],
     cardClassName: "border-primary/30 bg-primary/10",
     titleClassName: "text-foreground",
@@ -69,7 +69,7 @@ export function ComparisonSection() {
     <section className="container mx-auto max-w-5xl px-4 md:px-6">
       <div className="text-center">
         <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
-          A DIFERENÇA ENTRE AMADOR E PROFISSIONAL
+          A DIFERENÇA ENTRE AMADOR E ESTRUTURADO
         </h2>
       </div>
 

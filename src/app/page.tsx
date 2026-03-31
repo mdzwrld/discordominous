@@ -3,6 +3,7 @@ import { TruthSection } from "@/components/sections/truth-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
 import { MethodSection } from "@/components/sections/method-section"
+import { HowItWorksSection } from "@/components/sections/how-it-works-section"
 import { IncludedSection } from "@/components/sections/included-section"
 import { WarningSection } from "@/components/sections/warning-section"
 import { OfferSection } from "@/components/sections/offer-section"
@@ -19,6 +20,7 @@ export default function Home() {
         <ComparisonSection />
         <ProofSection />
         <MethodSection />
+        <HowItWorksSection />
         <SocialProofSection />
         <IncludedSection />
         <OfferSection />

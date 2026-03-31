@@ -54,6 +54,12 @@ export function OfferSection() {
               </div>
             </div>
 
+            <div className="my-6 text-center text-muted-foreground">
+                <p>Isso não é caro porque depende de execução.</p>
+                <p>Eu preferi deixar acessível para quem realmente vai aplicar</p>
+                <p>— e não só consumir mais um conteúdo.</p>
+            </div>
+
             <div className="my-6">
               <span className="text-7xl font-extrabold md:text-8xl">
                 R$ 36,79

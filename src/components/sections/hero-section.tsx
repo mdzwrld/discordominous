@@ -2,7 +2,13 @@
 
 import { CtaButton } from "@/components/cta-button"
 import { Button } from "@/components/ui/button"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, CheckCircle2 } from "lucide-react"
+
+const bullets = [
+  "Mesmo começando com poucos membros",
+  "Sem precisar postar todos os dias",
+  "Sem depender de tráfego pago",
+]
 
 export function HeroSection() {
   const handleCtaClick = () => {
@@ -28,11 +34,21 @@ export function HeroSection() {
 
       <div className="container mx-auto max-w-5xl px-4 text-center md:px-6">
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Como eu fiz <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$ 150.221,22 em 3 meses</span> usando APENAS O DISCORD.
+          Como eu gerei <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$150.221,22 em 3 meses</span> usando um Discord estruturado (mesmo sem audiência grande)
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-          Sem aparecer. Sem depender de algoritmo. Sem implorar por engajamento.
+          Sem aparecer. Sem depender de algoritmo. Sem precisar viralizar.
         </p>
+
+        <ul className="mx-auto mt-8 grid max-w-md grid-cols-1 gap-2 text-left text-lg text-muted-foreground sm:max-w-none sm:grid-cols-3">
+          {bullets.map((bullet) => (
+            <li key={bullet} className="flex items-center justify-center gap-2 sm:justify-start">
+              <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-primary" />
+              <span>{bullet}</span>
+            </li>
+          ))}
+        </ul>
+
 
         <div className="mt-10">
           <CtaButton
@@ -42,10 +58,6 @@ export function HeroSection() {
             QUERO CONSTRUIR MINHA MÁQUINA
           </CtaButton>
         </div>
-        <p className="mt-8 text-lg text-muted-foreground">
-          Enquanto a maioria tenta viralizar… <br />
-          <span className="font-semibold text-foreground">Eu construí uma máquina privada de dinheiro. E é exatamente isso que ninguém quer que você entenda.</span>
-        </p>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
         <Button
