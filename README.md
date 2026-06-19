@@ -1,4 +1,4 @@
-# Discord Dominus
+cd discordominous# Discord Dominus
 
 This is a Next.js project for a high-conversion sales page, built with Firebase Studio.
 
