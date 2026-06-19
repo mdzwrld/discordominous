@@ -44,8 +44,8 @@ const testimonials = [
 
 export function SocialProofSection() {
   return (
-    <section className="w-full">
-      <div className="container mx-auto max-w-6xl px-4 md:px-6">
+    <section className="w-full overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
             RESULTADO DE QUEM APLICOU
@@ -55,57 +55,62 @@ export function SocialProofSection() {
             <p>
               Mas todos seguem o mesmo princípio:{" "}
               <span className="font-semibold text-foreground">
-                estrutura &gt; improviso.
+                sistema &gt; improviso.
               </span>
             </p>
           </div>
         </div>
 
-        <p className="mt-4 text-center text-muted-foreground md:hidden">
-          Arraste para o lado para ver mais feedback
-        </p>
+        <div className="mt-6 text-center md:hidden">
+          <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
+            <span>←</span> Arraste para o lado para ver mais <span>→</span>
+          </p>
+        </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="mt-12 w-full"
-        >
-          <CarouselContent>
-            {testimonials.map(
-              (testimonial, index) =>
-                testimonial.image && (
-                  <CarouselItem
-                    key={index}
-                    className="md:basis-1/2 lg:basis-1/3"
-                  >
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex h-full flex-col items-center justify-start p-4">
-                          <Image
-                            src={testimonial.image.imageUrl}
-                            alt={testimonial.image.description}
-                            data-ai-hint={testimonial.image.imageHint}
-                            width={400}
-                            height={400}
-                            className="h-auto w-full rounded-lg"
-                          />
-                          {testimonial.comment && (
-                            <p className="mt-4 text-center text-base font-medium text-foreground">
-                              {testimonial.comment}
-                            </p>
-                          )}
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                )
-            )}
-          </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
-        </Carousel>
+        <div className="relative mt-8 px-4 md:px-0">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map(
+                (testimonial, index) =>
+                  testimonial.image && (
+                    <CarouselItem
+                      key={index}
+                      className="pl-2 md:basis-1/2 md:pl-4 lg:basis-1/3"
+                    >
+                      <div className="h-full p-1">
+                        <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm">
+                          <CardContent className="flex h-full flex-col items-center justify-start p-6">
+                            <div className="relative aspect-square w-full overflow-hidden rounded-xl">
+                              <Image
+                                src={testimonial.image.imageUrl}
+                                alt={testimonial.image.description}
+                                data-ai-hint={testimonial.image.imageHint}
+                                fill
+                                className="object-cover"
+                              />
+                            </div>
+                            {testimonial.comment && (
+                              <p className="mt-6 text-center text-base font-medium leading-relaxed text-foreground">
+                                {testimonial.comment}
+                              </p>
+                            )}
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  )
+              )}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </div>
       </div>
     </section>
   )
