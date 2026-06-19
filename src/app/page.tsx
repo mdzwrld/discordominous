@@ -1,6 +1,5 @@
 import { HeroSection } from "@/components/sections/hero-section"
 import { EmotionalHeroSection } from "@/components/sections/emotional-hero-section"
-import { TruthSection } from "@/components/sections/truth-section"
 import { StuckSection } from "@/components/sections/stuck-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
@@ -26,10 +25,6 @@ export default function Home() {
       <div className="flex w-full flex-col items-center space-y-24 py-16 md:space-y-32 md:py-24">
         <FadeIn>
           <EmotionalHeroSection />
-        </FadeIn>
-
-        <FadeIn>
-          <TruthSection />
         </FadeIn>
 
         <FadeIn>
