@@ -15,53 +15,52 @@ const includedItems = [
 
 export function OfferSection() {
   const handleCtaClick = () => {
-    // In a real application, this would redirect to a checkout page.
     alert("Redirecionando para o checkout!")
   }
 
   return (
-    <section id="offer" className="w-full scroll-mt-20">
-      <div className="container mx-auto max-w-3xl px-4 md:px-6">
+    <section id="offer" className="w-full scroll-mt-20 px-4 md:px-0">
+      <div className="container mx-auto max-w-3xl">
         <h3 className="mb-4 text-center text-sm font-bold uppercase tracking-widest text-primary">
           OPERAÇÃO LIMITADA
         </h3>
         <Card className="relative overflow-hidden border-2 border-primary bg-card shadow-2xl shadow-primary/20">
           <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-primary/[0.07]"></div>
 
-          <CardContent className="p-8 text-center md:p-12">
-            <h3 className="text-3xl font-extrabold text-primary md:text-4xl">
+          <CardContent className="p-6 text-center md:p-12">
+            <h3 className="text-2xl font-extrabold text-primary sm:text-3xl md:text-4xl">
               Acesse o Escala Sem Esforço
             </h3>
 
             <div className="my-8">
-              <ul className="grid grid-cols-1 gap-x-8 gap-y-4 text-left text-lg sm:grid-cols-2">
+              <ul className="grid grid-cols-1 gap-x-8 gap-y-3 text-left text-base sm:grid-cols-2 md:text-lg">
                 {includedItems.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <CheckCircle2 className="h-6 w-6 flex-shrink-0 text-primary" />
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-primary" />
                     <span className="font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 flex flex-col items-center justify-center gap-3 text-lg font-bold text-primary">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
+              <div className="mt-6 flex flex-col items-center justify-center gap-3 text-base font-bold text-primary md:text-lg">
+                <div className="flex items-center gap-3 text-center">
+                  <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
                   <span>+FORNECEDORES VALIDADOS</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
+                <div className="flex items-center gap-3 text-center">
+                  <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
                   <span>+ COMO VENDER NA GGMAX</span>
                 </div>
               </div>
             </div>
 
-            <div className="my-6 text-center text-muted-foreground">
+            <div className="my-6 text-center text-sm text-muted-foreground md:text-base">
                 <p>Isso não é caro porque depende de execução.</p>
                 <p>Eu preferi deixar acessível para quem realmente vai aplicar</p>
                 <p>— e não só consumir mais um conteúdo.</p>
             </div>
 
             <div className="my-6">
-              <span className="text-7xl font-extrabold md:text-8xl">
+              <span className="text-5xl font-extrabold sm:text-6xl md:text-8xl">
                 R$ 36,79
               </span>
             </div>
@@ -73,12 +72,12 @@ export function OfferSection() {
             <div className="mt-8">
               <CtaButton
                 onClick={handleCtaClick}
-                className="w-full max-w-lg transform p-8 text-base"
+                className="w-full max-w-lg transform p-6 text-base md:p-8"
               >
                 CRIAR MINHA RENDA RECORRENTE AGORA
               </CtaButton>
             </div>
-            <p className="mt-6 text-muted-foreground">
+            <p className="mt-6 text-sm text-muted-foreground md:text-base">
               Preço ridiculamente baixo pelo nível de sistema entregue.
               <br />
               <span className="font-semibold text-foreground">

@@ -3,7 +3,7 @@ import Image from "next/image"
 export function ProofSection() {
   return (
     <section className="container mx-auto max-w-5xl px-4 text-center md:px-6">
-      <h2 className="my-4 text-4xl font-black tracking-tighter text-primary md:text-7xl drop-shadow-sm">
+      <h2 className="my-4 text-3xl font-black tracking-tighter text-primary sm:text-5xl md:text-7xl drop-shadow-sm">
         R$ 150.221,22 em 3 meses.
       </h2>
       <div className="mt-8 space-y-2 text-lg text-muted-foreground md:text-xl">
@@ -26,7 +26,7 @@ export function ProofSection() {
           data-ai-hint="dashboard graph"
           width={1000}
           height={333}
-          className="mx-auto rounded-xl border-4 border-primary/20 shadow-2xl shadow-primary/10"
+          className="mx-auto rounded-xl border-2 md:border-4 border-primary/20 shadow-2xl shadow-primary/10"
         />
       </div>
     </section>

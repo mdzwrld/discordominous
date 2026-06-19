@@ -41,14 +41,14 @@ export function FornecedoresSection() {
     <section className="container mx-auto max-w-4xl px-4 md:px-6">
       <div className="space-y-12">
         <div className="text-center">
-          <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
+          <h2 className="text-3xl font-extrabold tracking-tighter sm:text-4xl md:text-5xl">
             O que você vai vender (sem precisar inventar nada)
           </h2>
           <div className="mx-auto mt-4 max-w-2xl text-lg md:text-xl">
             <p className="text-muted-foreground">Você não precisa criar produto.</p>
             <p className="font-bold text-foreground">Você vai usar o que já vende todos os dias.</p>
           </div>
-          <p className="mx-auto mt-4 max-w-3xl text-lg">
+          <p className="mx-auto mt-4 max-w-3xl text-base md:text-lg">
             Dentro do seu sistema, você terá acesso a{" "}
             <span className="font-bold text-primary">
               fornecedores já testados
@@ -57,7 +57,7 @@ export function FornecedoresSection() {
             <span className="font-bold text-primary">alta demanda</span> na GGMAX e
             na internet.
           </p>
-          <p className="mt-2 text-xl font-bold">
+          <p className="mt-2 text-lg md:text-xl font-bold">
             Ou seja: você não precisa descobrir o que vender.
             <br />
             Você entra direto no que já funciona.
@@ -66,42 +66,42 @@ export function FornecedoresSection() {
 
         <Card className="border-border bg-card shadow-sm">
           <CardHeader>
-            <CardTitle className="text-center text-2xl font-bold md:text-3xl">
+            <CardTitle className="text-center text-xl font-bold md:text-3xl">
               Produtos com venda ativa todos os dias
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="grid grid-cols-1 gap-4 text-left text-lg md:grid-cols-2">
+            <ul className="grid grid-cols-1 gap-4 text-left text-base md:text-lg md:grid-cols-2">
               {products.map(product => (
                 <li key={product.name} className="flex items-center gap-3">
-                  <product.icon className="h-6 w-6 flex-shrink-0 text-primary" />
+                  <product.icon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>{product.name}</span>
                 </li>
               ))}
             </ul>
-            <div className="mt-6 text-center text-lg font-semibold">
+            <div className="mt-6 text-center text-base md:text-lg font-semibold">
               <p>👉 Esses produtos já são comprados todos os dias</p>
               <p>👉 Você só precisa estruturar a sua máquina de vendas</p>
             </div>
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-1 gap-8">
-          <div className="rounded-xl border bg-card p-8 text-card-foreground shadow-sm">
-            <h3 className="text-center text-2xl font-bold">
+        <div className="grid grid-cols-1 gap-6 md:gap-8">
+          <div className="rounded-xl border bg-card p-6 md:p-8 text-card-foreground shadow-sm">
+            <h3 className="text-center text-xl md:text-2xl font-bold">
               Você não está começando do zero
             </h3>
-            <p className="mt-4 text-center text-lg text-muted-foreground">
+            <p className="mt-4 text-center text-base md:text-lg text-muted-foreground">
               Esses produtos já estão entre os{" "}
               <span className="font-semibold text-foreground">
                 mais vendidos
               </span>{" "}
               da GGMAX.
             </p>
-            <p className="mt-2 text-center text-lg text-muted-foreground">
+            <p className="mt-2 text-center text-base md:text-lg text-muted-foreground">
               Isso significa:
             </p>
-            <ul className="mx-auto mt-2 max-w-md space-y-1 text-center text-lg md:text-left">
+            <ul className="mx-auto mt-2 max-w-md space-y-1 text-center text-base md:text-lg md:text-left">
               <li className="flex items-center justify-center gap-2 md:justify-start">
                 <CheckCircle2 className="h-5 w-5 text-primary" />
                 Existe demanda real
@@ -115,21 +115,21 @@ export function FornecedoresSection() {
                 Você não precisa validar nada
               </li>
             </ul>
-            <p className="mt-4 text-center text-lg font-semibold">
+            <p className="mt-4 text-center text-base md:text-lg font-semibold">
               👉 Você só entra com o sistema e captura essa demanda
             </p>
           </div>
-          <div className="rounded-xl border bg-card p-8 text-card-foreground shadow-sm">
-            <h3 className="text-center text-2xl font-bold">
+          <div className="rounded-xl border bg-card p-6 md:p-8 text-card-foreground shadow-sm">
+            <h3 className="text-center text-xl md:text-2xl font-bold">
               Como isso se conecta com o método
             </h3>
-            <div className="mt-4 space-y-2 text-center text-lg font-semibold">
+            <div className="mt-4 space-y-2 text-center text-base md:text-lg font-semibold">
               <p>Você monta a máquina de vendas →</p>
               <p>Usa fornecedores já validados →</p>
               <p>Atrai membros →</p>
               <p>E vende dentro da própria operação</p>
             </div>
-            <p className="mt-4 text-center text-lg text-muted-foreground">
+            <p className="mt-4 text-center text-base md:text-lg text-muted-foreground">
               Sem depender de post.
               <br />
               Sem depender de algoritmo.
@@ -137,18 +137,18 @@ export function FornecedoresSection() {
           </div>
         </div>
 
-        <div className="rounded-xl border-2 border-primary/30 bg-primary/10 p-8 text-center">
-          <h3 className="text-2xl font-bold text-primary">
+        <div className="rounded-xl border-2 border-primary/30 bg-primary/10 p-6 md:p-8 text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-primary">
             “Mas eu não sei o que vender…”
           </h3>
-          <p className="mt-4 text-xl text-foreground">
+          <p className="mt-4 text-lg md:text-xl text-foreground">
             Esse é exatamente o ponto.{" "}
             <span className="font-bold">Você não precisa saber.</span>
             <br />
             Você vai trabalhar com produtos que já movimentam dinheiro todos os
             dias.
           </p>
-          <p className="mt-4 text-xl font-bold">
+          <p className="mt-4 text-lg md:text-xl font-bold">
             A maioria tenta criar algo do zero e trava.
             <br />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -160,7 +160,7 @@ export function FornecedoresSection() {
         <div className="text-center">
           <CtaButton
             onClick={handleCtaClick}
-            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-lg md:p-8 md:text-xl"
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
           >
             👉 QUERO O SISTEMA + OS PRODUTOS QUE VENDEM
           </CtaButton>

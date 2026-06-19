@@ -24,10 +24,10 @@ import { FadeIn } from "@/components/fade-in"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-background text-foreground">
+    <main className="flex min-h-screen flex-col items-center bg-background text-foreground overflow-x-hidden">
       <HeroSection />
       
-      <div className="flex w-full flex-col items-center space-y-32 py-16 md:space-y-48 md:py-24">
+      <div className="flex w-full flex-col items-center space-y-24 py-16 md:space-y-48 md:py-24">
         <FadeIn>
           <EmotionalHeroSection />
         </FadeIn>
@@ -113,7 +113,7 @@ export default function Home() {
         </FadeIn>
       </div>
 
-      <footer className="container mx-auto py-16 text-center text-muted-foreground">
+      <footer className="container mx-auto px-4 py-16 text-center text-muted-foreground">
         <p>Pare de ser um espectador do próprio tempo.</p>
         <p className="font-bold text-foreground">
           Assuma o controle da sua máquina e mude o jogo.
