@@ -5,11 +5,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2 } from "lucide-react"
 
 const includedItems = [
-  "Estrutura exata do servidor",
-  "Organização validada",
+  "Sistema exato da máquina de vendas",
+  "Organização validada para conversão",
   "Modelo de monetização recorrente",
   "Scripts internos de posicionamento",
-  "Estratégia de crescimento",
+  "Estratégia de crescimento acelerado",
   "Plano de execução direto ao ponto",
 ]
 
@@ -23,7 +23,7 @@ export function OfferSection() {
     <section id="offer" className="w-full scroll-mt-20">
       <div className="container mx-auto max-w-3xl px-4 md:px-6">
         <h3 className="mb-4 text-center text-sm font-bold uppercase tracking-widest text-primary">
-          ESTRATÉGIA LIMITADA
+          OPERAÇÃO LIMITADA
         </h3>
         <Card className="relative overflow-hidden border-2 border-primary bg-card shadow-2xl shadow-primary/20">
           <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-primary/[0.07]"></div>
@@ -45,7 +45,7 @@ export function OfferSection() {
               <div className="mt-6 flex flex-col items-center justify-center gap-3 text-lg font-bold text-primary">
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
-                  <span>+FORNECEDORES</span>
+                  <span>+FORNECEDORES VALIDADOS</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
@@ -75,11 +75,11 @@ export function OfferSection() {
                 onClick={handleCtaClick}
                 className="w-full max-w-lg transform p-8 text-base"
               >
-                CRIAR MINHA RENDA RECORRENTE NO DISCORD AGORA
+                CRIAR MINHA RENDA RECORRENTE AGORA
               </CtaButton>
             </div>
             <p className="mt-6 text-muted-foreground">
-              Preço ridiculamente baixo pelo nível de estrutura entregue.
+              Preço ridiculamente baixo pelo nível de sistema entregue.
               <br />
               <span className="font-semibold text-foreground">
                 E não vai ficar assim para sempre.

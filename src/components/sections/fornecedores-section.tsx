@@ -44,15 +44,12 @@ export function FornecedoresSection() {
           <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
             O que você vai vender (sem precisar inventar nada)
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Você não precisa criar produto.
-            <br />
-            <span className="font-semibold text-foreground">
-              Você vai usar o que já vende todos os dias.
-            </span>
-          </p>
+          <div className="mx-auto mt-4 max-w-2xl text-lg md:text-xl">
+            <p className="text-muted-foreground">Você não precisa criar produto.</p>
+            <p className="font-bold text-foreground">Você vai usar o que já vende todos os dias.</p>
+          </div>
           <p className="mx-auto mt-4 max-w-3xl text-lg">
-            Dentro da estrutura, você terá acesso a{" "}
+            Dentro do seu sistema, você terá acesso a{" "}
             <span className="font-bold text-primary">
               fornecedores já testados
             </span>{" "}
@@ -84,7 +81,7 @@ export function FornecedoresSection() {
             </ul>
             <div className="mt-6 text-center text-lg font-semibold">
               <p>👉 Esses produtos já são comprados todos os dias</p>
-              <p>👉 Você só precisa estruturar o ambiente certo</p>
+              <p>👉 Você só precisa estruturar a sua máquina de vendas</p>
             </div>
           </CardContent>
         </Card>
@@ -119,7 +116,7 @@ export function FornecedoresSection() {
               </li>
             </ul>
             <p className="mt-4 text-center text-lg font-semibold">
-              👉 Você só entra com a estrutura e captura essa demanda
+              👉 Você só entra com o sistema e captura essa demanda
             </p>
           </div>
           <div className="rounded-xl border bg-card p-8 text-card-foreground shadow-sm">
@@ -127,10 +124,10 @@ export function FornecedoresSection() {
               Como isso se conecta com o método
             </h3>
             <div className="mt-4 space-y-2 text-center text-lg font-semibold">
-              <p>Você monta a estrutura →</p>
+              <p>Você monta a máquina de vendas →</p>
               <p>Usa fornecedores já validados →</p>
               <p>Atrai membros →</p>
-              <p>E vende dentro da própria comunidade</p>
+              <p>E vende dentro da própria operação</p>
             </div>
             <p className="mt-4 text-center text-lg text-muted-foreground">
               Sem depender de post.
@@ -165,7 +162,7 @@ export function FornecedoresSection() {
             onClick={handleCtaClick}
             className="h-auto w-full max-w-2xl whitespace-normal p-6 text-lg md:p-8 md:text-xl"
           >
-            👉 QUERO A ESTRUTURA + OS PRODUTOS QUE VENDEM
+            👉 QUERO O SISTEMA + OS PRODUTOS QUE VENDEM
           </CtaButton>
         </div>
       </div>

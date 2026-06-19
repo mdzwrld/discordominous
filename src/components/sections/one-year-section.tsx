@@ -18,7 +18,7 @@ export function OneYearSection() {
             A única coisa que pode mudar... é se essas horas vão continuar sendo apenas entretenimento.
           </p>
           <p className="mt-4 text-primary text-3xl font-black uppercase">
-            Ou se finalmente vão começar a construir algo seu.
+            Ou se finalmente vão começar a construir a sua própria operação.
           </p>
         </div>
       </div>

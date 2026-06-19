@@ -1,12 +1,14 @@
 import { HeroSection } from "@/components/sections/hero-section"
 import { EmotionalHeroSection } from "@/components/sections/emotional-hero-section"
 import { ProblemNotYouSection } from "@/components/sections/problem-not-you-section"
+import { QuestionSection } from "@/components/sections/question-section"
 import { BeSincereSection } from "@/components/sections/be-sincere-section"
+import { WhileReadingSection } from "@/components/sections/while-reading-section"
 import { EvolutionSection } from "@/components/sections/evolution-section"
-import { DreamSection } from "@/components/sections/dream-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
 import { TruthNoOneTellsSection } from "@/components/sections/truth-no-one-tells-section"
+import { DreamSection } from "@/components/sections/dream-section"
 import { MethodSection } from "@/components/sections/method-section"
 import { HowItWorksSection } from "@/components/sections/how-it-works-section"
 import { NoNeedToInventSection } from "@/components/sections/no-need-to-invent-section"
@@ -35,7 +37,15 @@ export default function Home() {
         </FadeIn>
 
         <FadeIn>
+          <QuestionSection />
+        </FadeIn>
+
+        <FadeIn>
           <BeSincereSection />
+        </FadeIn>
+
+        <FadeIn>
+          <WhileReadingSection />
         </FadeIn>
 
         <FadeIn>

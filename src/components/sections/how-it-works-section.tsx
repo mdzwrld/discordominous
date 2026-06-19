@@ -1,10 +1,10 @@
 import { Check } from "lucide-react"
 
 const steps = [
-  "Você recebe a estrutura pronta do servidor",
+  "Você recebe o sistema pronto da sua máquina de vendas",
   "Só adapta para o seu nicho",
   "Os membros entram e seguem um fluxo automático",
-  "A venda acontece dentro do ambiente",
+  "A venda acontece dentro da sua operação",
   "Você não depende de post nem algoritmo",
 ]
 

@@ -7,13 +7,13 @@ import { Check, Lock, X, Zap } from "lucide-react"
 const forYou = [
   "Quer criar renda recorrente sem depender de algoritmo",
   "Quer parar de recomeçar do zero todo mês",
-  "Quer construir um ativo digital",
+  "Quer construir um ativo digital próprio",
 ]
 
 const notForYou = [
-  "Quer dinheiro rápido sem esforço",
-  "Não quer estruturar nada",
-  "Prefere depender de sorte",
+  "Quer dinheiro rápido sem nenhum esforço",
+  "Não quer estruturar o próprio sistema",
+  "Prefere continuar dependendo de sorte",
 ]
 
 export function WarningSection() {
@@ -62,7 +62,7 @@ export function WarningSection() {
       </div>
 
       <div className="mt-12 text-center">
-        <p className="text-2xl font-bold">Ou você controla o ambiente</p>
+        <p className="text-2xl font-bold">Ou você controla o seu ecossistema</p>
         <p className="mt-2 text-2xl font-bold">
           Ou continua refém do algoritmo.
         </p>
