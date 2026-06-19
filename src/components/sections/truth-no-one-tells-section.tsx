@@ -1,7 +1,7 @@
 export function TruthNoOneTellsSection() {
   return (
     <section className="container mx-auto max-w-4xl px-4 text-center md:px-6">
-      <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-12">
+      <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-12 uppercase">
         A VERDADE QUE NINGUÉM FALA
       </h2>
       <div className="space-y-6 text-xl md:text-2xl">
@@ -20,11 +20,11 @@ export function TruthNoOneTellsSection() {
           </div>
           <div className="p-6 rounded-xl border bg-card/50">
             <p className="text-muted-foreground">O dinheiro não está no algoritmo.</p>
-            <p className="font-bold text-primary text-2xl">Está em construir comunidades.</p>
+            <p className="font-bold text-primary text-2xl">Está em construir sua própria base.</p>
           </div>
         </div>
         <p className="text-3xl md:text-4xl font-extrabold mt-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          O dinheiro está em ter uma estrutura que vende todos os dias.
+          O dinheiro está em ter um sistema que vende todos os dias.
         </p>
       </div>
     </section>

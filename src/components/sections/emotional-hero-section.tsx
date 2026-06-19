@@ -1,6 +1,6 @@
 export function EmotionalHeroSection() {
   return (
-    <section className="container mx-auto max-w-3xl px-4 text-center md:px-6">
+    <section id="emotional-intro" className="container mx-auto max-w-3xl px-4 text-center md:px-6 scroll-mt-20">
       <div className="space-y-6 text-xl md:text-2xl font-medium leading-relaxed">
         <p>Você passa horas no Discord todos os dias.</p>
         <div className="flex flex-col gap-2 italic text-muted-foreground">
@@ -18,7 +18,7 @@ export function EmotionalHeroSection() {
         <p className="text-2xl md:text-4xl font-extrabold tracking-tight mt-12">
           A diferença não é sorte. <br/>
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            A diferença é estrutura.
+            A diferença é um sistema.
           </span>
         </p>
       </div>

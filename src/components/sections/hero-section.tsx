@@ -20,8 +20,8 @@ export function HeroSection() {
   }
 
   const handleScrollDown = () => {
-    const truthSection = document.getElementById("truth-section")
-    truthSection?.scrollIntoView({
+    const nextSection = document.getElementById("emotional-intro")
+    nextSection?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     })
@@ -36,11 +36,23 @@ export function HeroSection() {
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
           Como eu gerei <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$150.221,22 em 3 meses</span> usando um Discord estruturado (mesmo sem audiência grande)
         </h1>
-        <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-          Sem aparecer. Sem depender de algoritmo. Sem precisar viralizar.
-        </p>
+        
+        <div className="mt-8 space-y-4">
+          <p className="mx-auto max-w-3xl text-xl font-medium text-foreground md:text-2xl">
+            Sem aparecer. Sem depender de algoritmo. Sem precisar viralizar.
+          </p>
+          <div className="mx-auto max-w-2xl border-y border-primary/20 py-4">
+            <p className="text-lg italic text-muted-foreground">
+              Enquanto milhões de jogadores usam o Discord apenas para conversar... <br/>
+              <span className="font-bold text-foreground">Alguns estão usando para construir uma renda recorrente.</span>
+            </p>
+          </div>
+          <p className="text-lg font-semibold text-primary">
+            Você já passa horas online. A pergunta é: Por que essas horas ainda não estão trabalhando para você?
+          </p>
+        </div>
 
-        <ul className="mx-auto mt-8 grid max-w-md grid-cols-1 gap-2 text-left text-lg text-muted-foreground sm:max-w-none sm:grid-cols-3">
+        <ul className="mx-auto mt-12 grid max-w-md grid-cols-1 gap-4 text-left text-lg text-muted-foreground sm:max-w-none sm:grid-cols-3">
           {bullets.map((bullet) => (
             <li key={bullet} className="flex items-center justify-center gap-2 sm:justify-start">
               <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-primary" />
@@ -49,8 +61,7 @@ export function HeroSection() {
           ))}
         </ul>
 
-
-        <div className="mt-10">
+        <div className="mt-12">
           <CtaButton
             onClick={handleCtaClick}
             className="w-full max-w-md p-8 text-xl"

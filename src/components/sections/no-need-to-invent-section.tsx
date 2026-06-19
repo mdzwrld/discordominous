@@ -1,8 +1,8 @@
 export function NoNeedToInventSection() {
   return (
     <section className="container mx-auto max-w-4xl px-4 text-center md:px-6">
-      <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-8">
-        VOCÊ NÃO PRECISA INVENTAR NADA
+      <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-8 uppercase">
+        Você não precisa inventar nada
       </h2>
       <div className="space-y-8 text-xl md:text-2xl">
         <p className="text-muted-foreground">
