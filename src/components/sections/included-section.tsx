@@ -16,7 +16,7 @@ export function IncludedSection() {
       <div className="text-center">
         <div className="mb-12">
             <p className="text-2xl font-bold text-muted-foreground">Isso NÃO é conteúdo solto.</p>
-            <p className="text-4xl font-black text-primary tracking-tight">É uma estrutura pronta pra aplicar.</p>
+            <p className="text-4xl font-black text-primary tracking-tight">É um sistema pronto pra aplicar.</p>
         </div>
 
         <h2 className="text-4xl font-extrabold tracking-tighter md:text-5xl">
@@ -43,9 +43,9 @@ export function IncludedSection() {
             </p>
           </div>
           <div className="rounded-2xl border-2 border-primary/20 bg-card p-6 text-card-foreground shadow-xl transition-transform hover:scale-105">
-            <p className="text-4xl font-black text-primary">Única</p>
+            <p className="text-4xl font-black text-primary">Único</p>
             <p className="mt-2 text-sm font-bold uppercase tracking-wider text-muted-foreground">
-              estrutura
+              sistema
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export function IncludedSection() {
             size="lg"
             className="w-full max-w-md h-auto p-6 text-xl font-black"
           >
-            ACESSAR ESTRUTURA AGORA
+            ACESSAR SISTEMA AGORA
           </CtaButton>
         </div>
       </div>

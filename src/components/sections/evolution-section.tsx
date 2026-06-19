@@ -40,7 +40,7 @@ export function EvolutionSection() {
         <h2 className="text-4xl font-black tracking-tighter md:text-5xl text-primary">
           SUA EVOLUÇÃO
         </h2>
-        <p className="mt-4 text-lg text-muted-foreground">De um simples jogador para o dono do próprio ecossistema.</p>
+        <p className="mt-4 text-lg text-muted-foreground">De um simples jogador para o dono da própria operação.</p>
       </div>
 
       <div className="space-y-8">

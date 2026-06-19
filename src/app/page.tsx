@@ -49,6 +49,10 @@ export default function Home() {
         </FadeIn>
 
         <FadeIn>
+          <DreamSection />
+        </FadeIn>
+
+        <FadeIn>
           <EvolutionSection />
         </FadeIn>
 
@@ -62,10 +66,6 @@ export default function Home() {
 
         <FadeIn>
           <TruthNoOneTellsSection />
-        </FadeIn>
-
-        <FadeIn>
-          <DreamSection />
         </FadeIn>
 
         <FadeIn>
