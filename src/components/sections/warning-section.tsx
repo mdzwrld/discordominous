@@ -1,3 +1,4 @@
+
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
@@ -18,11 +19,7 @@ const notForYou = [
 
 export function WarningSection() {
   const handleCtaClick = () => {
-    const offerSection = document.getElementById("offer")
-    offerSection?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    })
+    window.location.href = "https://pay.cakto.com.br/f8qx3v6_935738"
   }
 
   return (

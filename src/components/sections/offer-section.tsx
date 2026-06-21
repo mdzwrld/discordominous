@@ -1,3 +1,4 @@
+
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
@@ -15,7 +16,7 @@ const includedItems = [
 
 export function OfferSection() {
   const handleCtaClick = () => {
-    alert("Redirecionando para o checkout!")
+    window.location.href = "https://pay.cakto.com.br/f8qx3v6_935738"
   }
 
   return (
