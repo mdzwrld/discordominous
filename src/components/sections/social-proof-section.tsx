@@ -46,7 +46,7 @@ export function SocialProofSection() {
   return (
     <section className="w-full overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-10">
+        <div className="text-center mb-8 md:mb-10">
           <h2 className="text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl uppercase">
             RESULTADO DE QUEM APLICOU
           </h2>
@@ -75,11 +75,11 @@ export function SocialProofSection() {
                   testimonial.image && (
                     <CarouselItem
                       key={index}
-                      className="pl-4 basis-[88%] sm:basis-1/2 lg:basis-1/3"
+                      className="pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3"
                     >
-                      <div className="h-full py-4">
+                      <div className="h-full py-2">
                         <Card className="h-full border-primary/20 bg-card shadow-xl transition-all hover:border-primary/40">
-                          <CardContent className="flex h-full flex-col p-5 md:p-6">
+                          <CardContent className="flex h-full flex-col p-4 md:p-6">
                             <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-muted shadow-inner">
                               <Image
                                 src={testimonial.image.imageUrl}
@@ -90,8 +90,8 @@ export function SocialProofSection() {
                               />
                             </div>
                             {testimonial.comment && (
-                              <div className="mt-6 flex-1">
-                                <p className="text-left text-sm md:text-base font-medium leading-relaxed text-foreground italic">
+                              <div className="mt-4 md:mt-6 flex-1">
+                                <p className="text-left text-xs md:text-base font-medium leading-relaxed text-foreground italic">
                                   {testimonial.comment}
                                 </p>
                               </div>
