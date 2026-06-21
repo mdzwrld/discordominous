@@ -44,13 +44,13 @@ const testimonials = [
 
 export function SocialProofSection() {
   return (
-    <section className="w-full overflow-hidden">
+    <section className="w-full overflow-hidden py-12">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-8 md:mb-10">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl uppercase">
             RESULTADO DE QUEM APLICOU
           </h2>
-          <div className="mt-4 text-sm md:text-lg text-muted-foreground">
+          <div className="mt-4 text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto">
             <p>Resultados variam de acordo com execução.</p>
             <p>
               Mas todos seguem o mesmo princípio:{" "}
@@ -77,21 +77,22 @@ export function SocialProofSection() {
                       key={index}
                       className="pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3"
                     >
-                      <div className="h-full py-2">
-                        <Card className="h-full border-primary/20 bg-card shadow-xl transition-all hover:border-primary/40">
+                      <div className="h-full py-4">
+                        <Card className="h-full border-primary/20 bg-card/50 backdrop-blur-sm shadow-xl transition-all hover:border-primary/40 flex flex-col">
                           <CardContent className="flex h-full flex-col p-4 md:p-6">
-                            <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-muted shadow-inner">
+                            <div className="relative aspect-[4/3] md:aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-muted/30 shadow-inner">
                               <Image
                                 src={testimonial.image.imageUrl}
                                 alt={testimonial.image.description}
                                 data-ai-hint={testimonial.image.imageHint}
                                 fill
-                                className="object-cover"
+                                className="object-contain p-1"
+                                sizes="(max-width: 768px) 85vw, 30vw"
                               />
                             </div>
                             {testimonial.comment && (
-                              <div className="mt-4 md:mt-6 flex-1">
-                                <p className="text-left text-xs md:text-base font-medium leading-relaxed text-foreground italic">
+                              <div className="mt-4 flex-1">
+                                <p className="text-left text-sm md:text-base font-medium leading-relaxed text-foreground italic line-clamp-6 md:line-clamp-none">
                                   {testimonial.comment}
                                 </p>
                               </div>
@@ -104,7 +105,7 @@ export function SocialProofSection() {
               )}
             </CarouselContent>
             
-            <div className="mt-6 flex items-center justify-center gap-4 md:hidden">
+            <div className="mt-8 flex items-center justify-center gap-4 md:hidden">
               <span className="h-px w-8 bg-primary/30" />
               <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60">
                 Arraste para o lado
