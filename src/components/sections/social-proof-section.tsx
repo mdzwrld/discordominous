@@ -44,13 +44,13 @@ const testimonials = [
 
 export function SocialProofSection() {
   return (
-    <section className="w-full overflow-hidden px-4 md:px-0">
-      <div className="container mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-extrabold tracking-tighter sm:text-4xl md:text-5xl uppercase">
+    <section className="w-full overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl uppercase">
             RESULTADO DE QUEM APLICOU
           </h2>
-          <div className="mt-4 text-center text-sm md:text-lg text-muted-foreground">
+          <div className="mt-4 text-sm md:text-lg text-muted-foreground">
             <p>Resultados variam de acordo com execução.</p>
             <p>
               Mas todos seguem o mesmo princípio:{" "}
@@ -61,26 +61,26 @@ export function SocialProofSection() {
           </div>
         </div>
 
-        <div className="relative mt-8">
+        <div className="relative">
           <Carousel
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent className="-ml-4">
               {testimonials.map(
                 (testimonial, index) =>
                   testimonial.image && (
                     <CarouselItem
                       key={index}
-                      className="pl-2 basis-[85%] sm:basis-1/2 lg:basis-1/3"
+                      className="pl-4 basis-[88%] sm:basis-1/2 lg:basis-1/3"
                     >
-                      <div className="h-full py-2">
-                        <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm shadow-md overflow-hidden">
-                          <CardContent className="flex h-full flex-col p-4 md:p-6">
-                            <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-border/50 bg-muted">
+                      <div className="h-full py-4">
+                        <Card className="h-full border-primary/20 bg-card shadow-xl transition-all hover:border-primary/40">
+                          <CardContent className="flex h-full flex-col p-5 md:p-6">
+                            <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-muted shadow-inner">
                               <Image
                                 src={testimonial.image.imageUrl}
                                 alt={testimonial.image.description}
@@ -90,7 +90,7 @@ export function SocialProofSection() {
                               />
                             </div>
                             {testimonial.comment && (
-                              <div className="mt-4 flex-1">
+                              <div className="mt-6 flex-1">
                                 <p className="text-left text-sm md:text-base font-medium leading-relaxed text-foreground italic">
                                   {testimonial.comment}
                                 </p>
@@ -105,9 +105,11 @@ export function SocialProofSection() {
             </CarouselContent>
             
             <div className="mt-6 flex items-center justify-center gap-4 md:hidden">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary animate-pulse">
-                ← Arraste para ver mais →
+              <span className="h-px w-8 bg-primary/30" />
+              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60">
+                Arraste para o lado
               </p>
+              <span className="h-px w-8 bg-primary/30" />
             </div>
 
             <CarouselPrevious className="hidden md:flex -left-12" />
