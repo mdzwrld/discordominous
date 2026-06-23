@@ -51,6 +51,14 @@ export function OfferSection() {
                   <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
                   <span>+ COMO VENDER NA GGMAX</span>
                 </div>
+                <div className="mt-4 flex flex-col items-center gap-1 text-accent">
+                  <p className="text-xs font-black uppercase tracking-tighter md:text-lg lg:text-xl">
+                    (bonus: 🔥 + COMO FAZER AS PRIMEIRAS VENDAS EM 7 DIAS
+                  </p>
+                  <p className="text-xs font-black uppercase tracking-tighter md:text-lg lg:text-xl">
+                    🔥 + COMO ESCALAR COM META ADS)
+                  </p>
+                </div>
               </div>
             </div>
 
