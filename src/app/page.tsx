@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/sections/hero-section"
 import { EmotionalHeroSection } from "@/components/sections/emotional-hero-section"
 import { QuestionSection } from "@/components/sections/question-section"
-import { BeSincereSection } from "@/components/sections/be-sincere-section"
 import { WhileReadingSection } from "@/components/sections/while-reading-section"
 import { DreamSection } from "@/components/sections/dream-section"
 import { ComparisonSection } from "@/components/sections/comparison-section"
@@ -32,10 +31,6 @@ export default function Home() {
 
         <FadeIn>
           <QuestionSection />
-        </FadeIn>
-
-        <FadeIn>
-          <BeSincereSection />
         </FadeIn>
 
         <FadeIn>
