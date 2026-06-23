@@ -12,7 +12,7 @@ export function IncludedSection() {
   }
 
   return (
-    <section className="container mx-auto max-w-4xl px-4 md:px-6">
+    <section className="container mx-auto max-w-6xl px-4 md:px-6">
       <div className="text-center">
         <div className="mb-12">
             <p className="text-2xl font-bold text-muted-foreground">Isso NÃO é conteúdo solto.</p>
@@ -23,7 +23,7 @@ export function IncludedSection() {
           O QUE VOCÊ VAI TER ACESSO
         </h2>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 text-center md:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-4 text-center sm:grid-cols-3 lg:grid-cols-5">
           <div className="rounded-2xl border-2 border-primary/20 bg-card p-6 text-card-foreground shadow-xl transition-transform hover:scale-105">
             <p className="text-4xl font-black text-primary">59.89%</p>
             <p className="mt-2 text-sm font-bold uppercase tracking-wider text-muted-foreground">
@@ -46,6 +46,12 @@ export function IncludedSection() {
             <p className="text-4xl font-black text-primary">Único</p>
             <p className="mt-2 text-sm font-bold uppercase tracking-wider text-muted-foreground">
               sistema
+            </p>
+          </div>
+          <div className="rounded-2xl border-2 border-primary/20 bg-card p-6 text-card-foreground shadow-xl transition-transform hover:scale-105 col-span-2 sm:col-span-1">
+            <p className="text-4xl font-black text-primary">SIM</p>
+            <p className="mt-2 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+              Fornecedores Validados
             </p>
           </div>
         </div>
