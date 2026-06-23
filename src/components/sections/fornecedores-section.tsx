@@ -40,30 +40,6 @@ export function FornecedoresSection() {
   return (
     <section className="container mx-auto max-w-4xl px-4 md:px-6">
       <div className="space-y-12">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tighter sm:text-4xl md:text-5xl">
-            O que você vai vender (sem precisar inventar nada)
-          </h2>
-          <div className="mx-auto mt-4 max-w-2xl text-lg md:text-xl">
-            <p className="text-muted-foreground">Você não precisa criar produto.</p>
-            <p className="font-bold text-foreground">Você vai usar o que já vende todos os dias.</p>
-          </div>
-          <p className="mx-auto mt-4 max-w-3xl text-base md:text-lg">
-            Dentro do seu sistema, você terá acesso a{" "}
-            <span className="font-bold text-primary">
-              fornecedores já testados
-            </span>{" "}
-            com produtos que têm{" "}
-            <span className="font-bold text-primary">alta demanda</span> na GGMAX e
-            na internet.
-          </p>
-          <p className="mt-2 text-lg md:text-xl font-bold">
-            Ou seja: você não precisa descobrir o que vender.
-            <br />
-            Você entra direto no que já funciona.
-          </p>
-        </div>
-
         <Card className="border-border bg-card shadow-sm">
           <CardHeader>
             <CardTitle className="text-center text-xl font-bold md:text-3xl">
