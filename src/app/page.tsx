@@ -5,7 +5,6 @@ import { WhileReadingSection } from "@/components/sections/while-reading-section
 import { DreamSection } from "@/components/sections/dream-section"
 import { ProofSection } from "@/components/sections/proof-section"
 import { TruthNoOneTellsSection } from "@/components/sections/truth-no-one-tells-section"
-import { MethodSection } from "@/components/sections/method-section"
 import { HowItWorksSection } from "@/components/sections/how-it-works-section"
 import { NoNeedToInventSection } from "@/components/sections/no-need-to-invent-section"
 import { FornecedoresSection } from "@/components/sections/fornecedores-section"
@@ -46,10 +45,6 @@ export default function Home() {
 
         <FadeIn>
           <TruthNoOneTellsSection />
-        </FadeIn>
-
-        <FadeIn>
-          <MethodSection />
         </FadeIn>
 
         <FadeIn>
