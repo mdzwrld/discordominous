@@ -1,4 +1,16 @@
+"use client"
+
+import { CtaButton } from "@/components/cta-button"
+
 export function QuestionSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="container mx-auto max-w-3xl px-4 text-center md:px-6">
       <h2 className="text-2xl font-bold md:text-3xl text-primary mb-8 uppercase tracking-tighter">
@@ -21,6 +33,15 @@ export function QuestionSection() {
           A diferença é que algumas pessoas estão usando esse tempo para criar algo próprio.
         </p>
         <p className="italic text-muted-foreground">Enquanto outras continuam apenas consumindo.</p>
+        
+        <div className="mt-12 flex justify-center">
+          <CtaButton
+            onClick={handleCtaClick}
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+          >
+            👉 QUERO COMEÇAR A CONSTRUIR ALGO MEU
+          </CtaButton>
+        </div>
       </div>
     </section>
   )
