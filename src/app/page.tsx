@@ -16,6 +16,7 @@ import { WarningSection } from "@/components/sections/warning-section"
 import { GuaranteeSection } from "@/components/sections/guarantee-section"
 import { SocialProofSection } from "@/components/sections/social-proof-section"
 import { FadeIn } from "@/components/fade-in"
+import { CtaButton } from "@/components/cta-button"
 
 export default function Home() {
   return (
@@ -85,6 +86,17 @@ export default function Home() {
 
         <FadeIn>
           <GuaranteeSection />
+        </FadeIn>
+
+        <FadeIn>
+          <div className="flex w-full justify-center px-4">
+            <CtaButton
+              asChild
+              className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+            >
+              <a href="#offer">👉 QUERO O SISTEMA + OS PRODUTOS QUE VENDEM</a>
+            </CtaButton>
+          </div>
         </FadeIn>
       </div>
 
