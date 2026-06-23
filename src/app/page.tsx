@@ -83,11 +83,8 @@ export default function Home() {
         </FadeIn>
       </div>
 
-      <footer className="container mx-auto px-4 py-16 text-center text-muted-foreground">
-        <p>Pare de ser um espectador do próprio tempo.</p>
-        <p className="font-bold text-foreground">
-          Assuma o controle da sua máquina e mude o jogo.
-        </p>
+      <footer className="container mx-auto px-4 py-16 text-center text-muted-foreground border-t border-border/10">
+        <p>© 2025 Discord Dominous. Todos os direitos reservados.</p>
       </footer>
     </main>
   )
