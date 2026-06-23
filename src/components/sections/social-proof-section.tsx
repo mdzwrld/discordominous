@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
+import { CtaButton } from "@/components/cta-button"
 
 const testimonials = [
   {
@@ -33,6 +34,14 @@ const testimonials = [
 ]
 
 export function SocialProofSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="w-full overflow-hidden py-12 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
@@ -99,6 +108,15 @@ export function SocialProofSection() {
             <CarouselPrevious className="hidden md:flex -left-12" />
             <CarouselNext className="hidden md:flex -right-12" />
           </Carousel>
+
+          <div className="mt-12 flex justify-center">
+            <CtaButton
+              onClick={handleCtaClick}
+              className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+            >
+              👉 QUERO TER ESSES RESULTADOS COM MINHA OPERAÇÃO
+            </CtaButton>
+          </div>
         </div>
       </div>
     </section>
