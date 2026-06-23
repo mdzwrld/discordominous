@@ -1,4 +1,16 @@
+"use client"
+
+import { CtaButton } from "@/components/cta-button"
+
 export function WhileReadingSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="container mx-auto max-w-4xl px-4 text-center md:px-6">
       <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl mb-12">
@@ -28,6 +40,18 @@ export function WhileReadingSection() {
           </div>
           <p className="text-2xl font-black text-foreground uppercase tracking-tighter">Ele apenas começou.</p>
         </div>
+      </div>
+
+      <div className="mt-16 flex flex-col items-center gap-6">
+        <p className="text-xl font-bold text-primary italic">
+          "O arrependimento de não ter começado hoje será o seu maior custo amanhã."
+        </p>
+        <CtaButton
+          onClick={handleCtaClick}
+          className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+        >
+          👉 QUERO PARAR DE PERDER TEMPO E COMEÇAR A LUCRAR
+        </CtaButton>
       </div>
     </section>
   )
