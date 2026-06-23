@@ -133,6 +133,23 @@ export function FornecedoresSection() {
           </p>
         </div>
 
+        {/* Bloco de reflexão decisão movido para cá */}
+        <div className="space-y-8 text-center py-8">
+          <div className="p-8 md:p-10 bg-card border-4 border-primary rounded-2xl shadow-2xl">
+            <p className="text-foreground text-xl md:text-2xl font-bold leading-tight mb-4">Você já tem o tempo.</p>
+            <p className="text-foreground text-xl md:text-2xl font-bold leading-tight mb-4">Você já tem o Discord.</p>
+            <p className="text-foreground text-xl md:text-2xl font-bold leading-tight mb-4">Você já tem acesso aos jogadores.</p>
+            <p className="text-primary font-black uppercase tracking-tighter text-3xl md:text-5xl">O QUE FALTA É UM SISTEMA.</p>
+          </div>
+          
+          <div className="mt-8 space-y-4">
+            <p className="text-foreground text-xl md:text-2xl font-bold leading-tight">
+              Quanto tempo você ainda vai esperar <br/>
+              para transformar isso em algo que gera retorno?
+            </p>
+          </div>
+        </div>
+
         <div className="text-center">
           <CtaButton
             onClick={handleCtaClick}

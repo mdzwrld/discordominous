@@ -12,7 +12,6 @@ import { IncludedSection } from "@/components/sections/included-section"
 import { OneYearSection } from "@/components/sections/one-year-section"
 import { OfferSection } from "@/components/sections/offer-section"
 import { WarningSection } from "@/components/sections/warning-section"
-import { FinalQuestionSection } from "@/components/sections/final-question-section"
 import { GuaranteeSection } from "@/components/sections/guarantee-section"
 import { SocialProofSection } from "@/components/sections/social-proof-section"
 import { FadeIn } from "@/components/fade-in"
@@ -61,10 +60,6 @@ export default function Home() {
 
         <FadeIn>
           <FornecedoresSection />
-        </FadeIn>
-
-        <FadeIn>
-          <FinalQuestionSection />
         </FadeIn>
 
         <FadeIn>
