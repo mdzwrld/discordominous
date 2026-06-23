@@ -29,8 +29,8 @@ export function HeroSection() {
         </h1>
         
         <div className="mt-8 space-y-4">
-          <p className="mx-auto max-w-3xl text-xl font-medium text-foreground md:text-2xl">
-            Sem aparecer. Sem depender de algoritmo. Sem precisar viralizar.
+          <p className="mx-auto max-w-3xl text-xl font-black text-foreground md:text-3xl uppercase tracking-tighter">
+            SEM PREJUÍZO ALGUM
           </p>
           <div className="mx-auto max-w-2xl border-y border-primary/20 py-4">
             <p className="text-lg italic text-muted-foreground">
