@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Script from "next/script"
 import { Toaster } from "@/components/ui/toaster"
 import "./globals.css"
 
@@ -41,6 +42,16 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="font-body antialiased font-light">
+        <Script id="lowtrack-pixel" strategy="afterInteractive">
+          {`
+            window.pixelId = "lt_px_c125cbd8ac6d";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://lowtrack.com.br/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
         {children}
         <Toaster />
       </body>
