@@ -23,8 +23,8 @@ export function WarningSection() {
   }
 
   return (
-    <section className="container mx-auto max-w-3xl px-4 md:px-6">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 scale-90 md:scale-100 transition-transform origin-center">
+    <section className="container mx-auto max-w-3xl px-4 md:px-6 scale-90 md:scale-100 transition-transform origin-center">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <Card className="border-primary/50 bg-primary/10">
           <CardContent className="p-8">
             <h3 className="text-xl font-bold text-primary">
