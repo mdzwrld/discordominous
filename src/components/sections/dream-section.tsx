@@ -36,9 +36,6 @@ export function DreamSection() {
         </div>
 
         <div className="mt-16 flex flex-col items-center gap-6">
-          <p className="text-xl font-bold text-primary italic">
-            "A melhor forma de prever o futuro é construindo ele."
-          </p>
           <CtaButton
             onClick={handleCtaClick}
             className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
