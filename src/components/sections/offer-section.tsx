@@ -42,22 +42,33 @@ export function OfferSection() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 flex flex-col items-center justify-center gap-3 text-base font-bold text-primary md:text-lg">
-                <div className="flex items-center gap-3 text-center">
-                  <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
-                  <span>+FORNECEDORES VALIDADOS</span>
+              
+              <div className="mt-8 space-y-6">
+                <div className="flex flex-col items-center justify-center gap-3 text-base font-bold text-primary md:text-lg">
+                  <div className="flex items-center gap-3 text-center">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
+                    <span>+ FORNECEDORES VALIDADOS</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-center">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
+                    <span>+ COMO VENDER NA GGMAX</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-3 text-center">
-                  <CheckCircle2 className="h-5 w-5 flex-shrink-0" />
-                  <span>+ COMO VENDER NA GGMAX</span>
-                </div>
-                <div className="mt-4 flex flex-col items-center gap-1 text-accent">
-                  <p className="text-xs font-black uppercase tracking-tighter md:text-lg lg:text-xl">
-                    (bonus: 🔥 + COMO FAZER AS PRIMEIRAS VENDAS EM 7 DIAS
-                  </p>
-                  <p className="text-xs font-black uppercase tracking-tighter md:text-lg lg:text-xl">
-                    🔥 + COMO ESCALAR COM META ADS)
-                  </p>
+
+                <div className="rounded-2xl bg-accent/5 border-2 border-dashed border-accent/30 p-4 md:p-6 space-y-4">
+                  <div className="flex items-center justify-center gap-2 text-accent">
+                    <span className="text-xl">🔥</span>
+                    <p className="text-sm font-black uppercase tracking-widest">Bônus de Ação Rápida</p>
+                    <span className="text-xl">🔥</span>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-base md:text-xl font-black uppercase tracking-tighter text-foreground">
+                      COMO FAZER AS PRIMEIRAS VENDAS EM 7 DIAS
+                    </p>
+                    <p className="text-base md:text-xl font-black uppercase tracking-tighter text-foreground">
+                      COMO ESCALAR COM META ADS
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
