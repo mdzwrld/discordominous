@@ -1,4 +1,16 @@
+"use client"
+
+import { CtaButton } from "@/components/cta-button"
+
 export function TruthNoOneTellsSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="container mx-auto max-w-4xl px-4 text-center md:px-6">
       <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-12 uppercase">
@@ -30,6 +42,15 @@ export function TruthNoOneTellsSection() {
           <p className="text-3xl md:text-4xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent uppercase tracking-tighter">
             O dinheiro está em ter um sistema que continua funcionando mesmo quando você não está online.
           </p>
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <CtaButton
+            onClick={handleCtaClick}
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+          >
+            👉 QUERO TER ESSE SISTEMA TRABALHANDO PARA MIM
+          </CtaButton>
         </div>
       </div>
     </section>
