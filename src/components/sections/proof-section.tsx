@@ -1,6 +1,17 @@
+"use client"
+
 import Image from "next/image"
+import { CtaButton } from "@/components/cta-button"
 
 export function ProofSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="container mx-auto max-w-5xl px-4 text-center md:px-6">
       <div className="mb-8 md:mb-12">
@@ -30,6 +41,15 @@ export function ProofSection() {
           <li className="p-3 bg-muted rounded-lg">Consomem conteúdo com intenção</li>
           <li className="p-3 bg-muted rounded-lg">E compram dentro da sua operação</li>
         </ul>
+      </div>
+
+      <div className="mt-12 flex justify-center">
+        <CtaButton
+          onClick={handleCtaClick}
+          className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+        >
+          👉 QUERO TER ESSES RESULTADOS COM MINHA OPERAÇÃO
+        </CtaButton>
       </div>
     </section>
   )
