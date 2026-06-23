@@ -1,17 +1,8 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { CtaButton } from "@/components/cta-button"
 
 export function BeSincereSection() {
-  const handleCtaClick = () => {
-    const offerSection = document.getElementById("offer")
-    offerSection?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    })
-  }
-
   return (
     <section className="container mx-auto max-w-3xl px-4 text-center md:px-6">
       <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl mb-8 uppercase text-primary">
@@ -42,16 +33,6 @@ export function BeSincereSection() {
               Porque informação nunca foi o problema. <br/>
               O problema era não ter um caminho claro.
             </p>
-          </div>
-
-          <div className="pt-8">
-            <CtaButton 
-              onClick={handleCtaClick}
-              size="lg" 
-              className="w-full max-w-md h-auto p-6 text-lg font-black uppercase tracking-tight"
-            >
-              Acesse o Escala Sem Esforço
-            </CtaButton>
           </div>
         </CardContent>
       </Card>
