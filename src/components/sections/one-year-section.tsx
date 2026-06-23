@@ -1,4 +1,16 @@
+"use client"
+
+import { CtaButton } from "@/components/cta-button"
+
 export function OneYearSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="container mx-auto max-w-4xl px-4 text-center md:px-6 py-12">
       <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-12">
@@ -23,9 +35,19 @@ export function OneYearSection() {
           </p>
         </div>
       </div>
-      <p className="mt-12 text-3xl font-black italic tracking-tighter uppercase">
-        A DECISÃO É SUA.
-      </p>
+      
+      <div className="mt-12 flex flex-col items-center gap-8">
+        <p className="text-3xl font-black italic tracking-tighter uppercase">
+          A DECISÃO É SUA.
+        </p>
+        
+        <CtaButton
+          onClick={handleCtaClick}
+          className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+        >
+          👉 QUERO COMEÇAR A CONSTRUIR MEU FUTURO HOJE
+        </CtaButton>
+      </div>
     </section>
   )
 }
