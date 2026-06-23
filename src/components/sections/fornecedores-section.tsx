@@ -113,6 +113,15 @@ export function FornecedoresSection() {
           </div>
         </div>
 
+        <div className="text-center">
+          <CtaButton
+            onClick={handleCtaClick}
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+          >
+            👉 QUERO O SISTEMA + OS PRODUTOS QUE VENDEM
+          </CtaButton>
+        </div>
+
         <div className="rounded-xl border-2 border-primary/30 bg-primary/10 p-6 md:p-8 text-center">
           <h3 className="text-xl md:text-2xl font-bold text-primary">
             “Mas eu não sei o que vender…”
@@ -133,7 +142,6 @@ export function FornecedoresSection() {
           </p>
         </div>
 
-        {/* Bloco de reflexão decisão movido para cá */}
         <div className="space-y-8 text-center py-8">
           <div className="p-8 md:p-10 bg-card border-4 border-primary rounded-2xl shadow-2xl">
             <p className="text-foreground text-xl md:text-2xl font-bold leading-tight mb-4">Você já tem o tempo.</p>
