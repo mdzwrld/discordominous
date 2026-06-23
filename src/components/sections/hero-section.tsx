@@ -1,6 +1,5 @@
 "use client"
 
-import { CtaButton } from "@/components/cta-button"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, CheckCircle2 } from "lucide-react"
 
@@ -11,14 +10,6 @@ const bullets = [
 ]
 
 export function HeroSection() {
-  const handleCtaClick = () => {
-    const offerSection = document.getElementById("offer")
-    offerSection?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    })
-  }
-
   const handleScrollDown = () => {
     const nextSection = document.getElementById("emotional-intro")
     nextSection?.scrollIntoView({
@@ -60,15 +51,6 @@ export function HeroSection() {
             </li>
           ))}
         </ul>
-
-        <div className="mt-12">
-          <CtaButton
-            onClick={handleCtaClick}
-            className="w-full max-w-md p-8 text-xl"
-          >
-            QUERO CONSTRUIR MINHA MÁQUINA
-          </CtaButton>
-        </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
         <Button
