@@ -1,7 +1,6 @@
 "use client"
 
 import { Check } from "lucide-react"
-import { CtaButton } from "@/components/cta-button"
 
 const steps = [
   "Você recebe o sistema pronto da sua máquina de vendas",
@@ -12,14 +11,6 @@ const steps = [
 ]
 
 export function HowItWorksSection() {
-  const handleCtaClick = () => {
-    const offerSection = document.getElementById("offer")
-    offerSection?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    })
-  }
-
   return (
     <section className="container mx-auto max-w-3xl px-4 md:px-6">
       <div className="rounded-xl border bg-card p-8 text-card-foreground shadow-sm">
@@ -34,15 +25,6 @@ export function HowItWorksSection() {
             </li>
           ))}
         </ul>
-
-        <div className="mt-10 flex justify-center">
-          <CtaButton
-            onClick={handleCtaClick}
-            className="h-auto w-full whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
-          >
-            👉 QUERO O SISTEMA PRONTO PARA APLICAR
-          </CtaButton>
-        </div>
       </div>
     </section>
   )
