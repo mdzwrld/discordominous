@@ -64,6 +64,10 @@ export default function Home() {
         </FadeIn>
 
         <FadeIn>
+          <FinalQuestionSection />
+        </FadeIn>
+
+        <FadeIn>
           <IncludedSection />
         </FadeIn>
 
@@ -77,10 +81,6 @@ export default function Home() {
 
         <FadeIn>
           <WarningSection />
-        </FadeIn>
-
-        <FadeIn>
-          <FinalQuestionSection />
         </FadeIn>
 
         <FadeIn>
