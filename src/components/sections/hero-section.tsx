@@ -34,7 +34,7 @@ export function HeroSection() {
 
       <div className="container mx-auto max-w-5xl px-4 text-center md:px-6">
         <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Como eu gerei <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$150.221,22 em 3 meses</span> usando um Discord estruturado (mesmo sem audiência grande)
+          Como eu gerei <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">R$150.221,22 em 3 meses</span> usando apenas o Discord
         </h1>
         
         <div className="mt-8 space-y-4">
