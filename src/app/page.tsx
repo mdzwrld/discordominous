@@ -3,7 +3,6 @@ import { EmotionalHeroSection } from "@/components/sections/emotional-hero-secti
 import { QuestionSection } from "@/components/sections/question-section"
 import { WhileReadingSection } from "@/components/sections/while-reading-section"
 import { DreamSection } from "@/components/sections/dream-section"
-import { ComparisonSection } from "@/components/sections/comparison-section"
 import { ProofSection } from "@/components/sections/proof-section"
 import { TruthNoOneTellsSection } from "@/components/sections/truth-no-one-tells-section"
 import { MethodSection } from "@/components/sections/method-section"
@@ -39,10 +38,6 @@ export default function Home() {
 
         <FadeIn>
           <DreamSection />
-        </FadeIn>
-
-        <FadeIn>
-          <ComparisonSection />
         </FadeIn>
 
         <FadeIn>
