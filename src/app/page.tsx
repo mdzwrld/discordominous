@@ -44,6 +44,10 @@ export default function Home() {
         </FadeIn>
 
         <FadeIn>
+          <SocialProofSection />
+        </FadeIn>
+
+        <FadeIn>
           <TruthNoOneTellsSection />
         </FadeIn>
 
@@ -57,10 +61,6 @@ export default function Home() {
 
         <FadeIn>
           <FornecedoresSection />
-        </FadeIn>
-
-        <FadeIn>
-          <SocialProofSection />
         </FadeIn>
 
         <FadeIn>
