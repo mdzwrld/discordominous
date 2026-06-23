@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import {
   Carousel,
@@ -8,6 +10,7 @@ import {
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
+import { CtaButton } from "@/components/cta-button"
 
 const testimonials = [
   {
@@ -31,6 +34,14 @@ const testimonials = [
 ]
 
 export function SocialProofSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="w-full overflow-hidden py-12 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
@@ -97,6 +108,18 @@ export function SocialProofSection() {
             <CarouselPrevious className="hidden md:flex -left-12" />
             <CarouselNext className="hidden md:flex -right-12" />
           </Carousel>
+        </div>
+
+        <div className="mt-16 flex flex-col items-center gap-6">
+          <p className="text-xl font-bold text-primary italic text-center">
+            "Não seja apenas mais um espectador no Discord. Seja o dono da sua própria operação."
+          </p>
+          <CtaButton
+            onClick={handleCtaClick}
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+          >
+            👉 QUERO MONTAR MINHA MÁQUINA DE VENDAS
+          </CtaButton>
         </div>
       </div>
     </section>
