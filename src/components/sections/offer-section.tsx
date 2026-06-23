@@ -25,7 +25,7 @@ export function OfferSection() {
         <h3 className="mb-4 text-center text-sm font-bold uppercase tracking-widest text-primary">
           OPERAÇÃO LIMITADA
         </h3>
-        <Card className="relative overflow-hidden border-2 border-primary bg-card shadow-2xl shadow-primary/20">
+        <Card className="relative overflow-hidden border-2 border-primary bg-card shadow-2xl shadow-primary/20 scale-95 md:scale-100 transition-transform duration-300">
           <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-primary/[0.07]"></div>
 
           <CardContent className="p-6 text-center md:p-12">
