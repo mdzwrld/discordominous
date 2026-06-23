@@ -1,4 +1,16 @@
+"use client"
+
+import { CtaButton } from "@/components/cta-button"
+
 export function NoNeedToInventSection() {
+  const handleCtaClick = () => {
+    const offerSection = document.getElementById("offer")
+    offerSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  }
+
   return (
     <section className="container mx-auto max-w-4xl px-4 text-center md:px-6">
       <h2 className="text-3xl font-extrabold tracking-tighter md:text-5xl text-primary mb-8 uppercase">
@@ -18,6 +30,15 @@ export function NoNeedToInventSection() {
           <p className="text-3xl font-black text-primary">
             Você só precisa entrar onde a demanda já existe.
           </p>
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <CtaButton
+            onClick={handleCtaClick}
+            className="h-auto w-full max-w-2xl whitespace-normal p-6 text-base md:p-8 md:text-xl leading-tight"
+          >
+            👉 QUERO O SISTEMA + OS PRODUTOS QUE VENDEM
+          </CtaButton>
         </div>
       </div>
     </section>
