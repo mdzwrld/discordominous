@@ -42,13 +42,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="font-body antialiased font-light">
-        <Script id="utmify-pixel" strategy="afterInteractive">
+        <Script id="lowtrack-pixel" strategy="afterInteractive">
           {`
-            window.pixelId = "6a4232360fef332b14f02513";
+            window.pixelId = "lt_px_b0e28e91742b";
             var a = document.createElement("script");
             a.setAttribute("async", "");
             a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            a.setAttribute("src", "https://lowtrack.com.br/pixel.js");
             document.head.appendChild(a);
           `}
         </Script>
