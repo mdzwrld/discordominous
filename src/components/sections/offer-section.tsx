@@ -3,6 +3,7 @@
 import { CtaButton } from "@/components/cta-button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2 } from "lucide-react"
+import { appendCurrentParams } from "@/lib/utils"
 
 const includedItems = [
   "Sistema exato da máquina de vendas",
@@ -15,7 +16,8 @@ const includedItems = [
 
 export function OfferSection() {
   const handleCtaClick = () => {
-    window.location.href = "https://compraonlineseguura.com/c/b0ae0417fa"
+    const checkoutUrl = "https://compraonlineseguura.com/c/b0ae0417fa"
+    window.location.href = appendCurrentParams(checkoutUrl)
   }
 
   return (

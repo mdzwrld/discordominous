@@ -3,6 +3,7 @@
 import { CtaButton } from "@/components/cta-button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Check, Lock, X, Zap } from "lucide-react"
+import { appendCurrentParams } from "@/lib/utils"
 
 const forYou = [
   "Quer criar renda recorrente sem depender de algoritmo",
@@ -18,7 +19,8 @@ const notForYou = [
 
 export function WarningSection() {
   const handleCtaClick = () => {
-    window.location.href = "https://compraonlineseguura.com/c/b0ae0417fa"
+    const checkoutUrl = "https://compraonlineseguura.com/c/b0ae0417fa"
+    window.location.href = appendCurrentParams(checkoutUrl)
   }
 
   return (
