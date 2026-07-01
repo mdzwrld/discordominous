@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className="font-body antialiased font-light">
         <Script id="lowtrack-pixel" strategy="afterInteractive">
           {`
-            window.pixelId = "lt_px_b0e28e91742b";
+            window.pixelId = "lt_px_c125cbd8ac6d";
             var a = document.createElement("script");
             a.setAttribute("async", "");
             a.setAttribute("defer", "");
