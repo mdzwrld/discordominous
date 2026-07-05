@@ -31,10 +31,6 @@ export function OfferSection() {
           <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-primary/[0.07]"></div>
 
           <CardContent className="p-6 text-center md:p-12">
-            <h3 className="text-2xl font-extrabold text-primary sm:text-3xl md:text-4xl">
-              Acesse o Escala Sem Esforço
-            </h3>
-
             <div className="my-8">
               <ul className="grid grid-cols-1 gap-x-8 gap-y-3 text-left text-base sm:grid-cols-2 md:text-lg">
                 {includedItems.map((item) => (
