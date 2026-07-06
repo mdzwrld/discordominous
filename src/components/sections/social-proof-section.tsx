@@ -49,15 +49,6 @@ export function SocialProofSection() {
           <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl uppercase leading-tight">
             RESULTADO DE QUEM APLICOU
           </h2>
-          <div className="mt-4 text-base md:text-xl text-muted-foreground max-w-2xl mx-auto space-y-1">
-            <p>Resultados variam de acordo com execução.</p>
-            <p>
-              Mas todos seguem o mesmo princípio:{" "}
-              <span className="font-semibold text-foreground">
-                sistema &gt; improviso.
-              </span>
-            </p>
-          </div>
         </div>
 
         <div className="relative mx-auto max-w-5xl px-4 md:px-12">
