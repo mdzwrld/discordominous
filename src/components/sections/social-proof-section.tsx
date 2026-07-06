@@ -1,3 +1,4 @@
+
 "use client"
 
 import Image from "next/image"
@@ -8,7 +9,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { CtaButton } from "@/components/cta-button"
 
@@ -27,9 +27,6 @@ const testimonials = [
   },
   {
     image: PlaceHolderImages.find((p) => p.id === "testimonial-5"),
-  },
-  {
-    image: PlaceHolderImages.find((p) => p.id === "testimonial-6"),
   },
 ]
 
@@ -67,29 +64,19 @@ export function SocialProofSection() {
                       key={index}
                       className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
                     >
-                      <div className="h-full py-4">
-                        <Card className="h-full border-primary/20 bg-card/50 backdrop-blur-sm shadow-2xl transition-all hover:border-primary/40 flex flex-col overflow-hidden">
-                          <CardContent className="flex h-full flex-col p-2">
-                            <div className="relative aspect-[9/12] w-full overflow-hidden rounded-lg bg-black/5 shadow-inner">
-                              <Image
-                                src={testimonial.image.imageUrl}
-                                alt={testimonial.image.description}
-                                data-ai-hint={testimonial.image.imageHint}
-                                fill
-                                className="object-contain"
-                                sizes="(max-width: 768px) 100vw, 33vw"
-                                priority={index < 3}
-                              />
-                            </div>
-                            {testimonial.image.comment && (
-                              <div className="mt-4 px-2 pb-2">
-                                <p className="text-sm italic text-muted-foreground line-clamp-3">
-                                  {testimonial.image.comment}
-                                </p>
-                              </div>
-                            )}
-                          </CardContent>
-                        </Card>
+                      <div className="relative flex h-full items-center justify-center py-4">
+                        <div className="relative w-full overflow-hidden rounded-2xl shadow-xl transition-all hover:scale-[1.02]">
+                          <Image
+                            src={testimonial.image.imageUrl}
+                            alt={testimonial.image.description}
+                            data-ai-hint={testimonial.image.imageHint}
+                            width={600}
+                            height={1200}
+                            className="h-auto w-full object-contain"
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            priority={index < 3}
+                          />
+                        </div>
                       </div>
                     </CarouselItem>
                   )

@@ -14,45 +14,33 @@
     },
     {
       "id": "testimonial-1",
-      "imageUrl": "https://i.imgur.com/QMVRT8V.png",
-      "imageHint": "testimonial screenshot",
-      "description": "Depoimento sobre o método.",
-      "comment": "“Finalmente saí do caos! O método de organização do servidor é de outro nível. Criei hierarquia, a comunidade engaja sozinha e eu tenho controle total. É surreal o poder que uma estrutura bem feita te dá.”"
+      "imageUrl": "https://i.postimg.cc/G2Gw35V8/e6f311e5-3627-4af6-8f9e-aa8003af0d29.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 1"
     },
     {
       "id": "testimonial-2",
-      "imageUrl": "https://i.imgur.com/VnpHHoj.png",
-      "imageHint": "testimonial screenshot",
-      "description": "Depoimento sobre o método.",
-      "comment": "“A organização do conteúdo é o que faz a diferença. Não é só sobre deixar bonito, é sobre guiar o membro para a oferta. Foi o que virou a chave para eu criar uma receita recorrente previsível, sem depender de sorte.”"
+      "imageUrl": "https://i.postimg.cc/DwMtrhK2/c0a12b10-342c-4101-98c8-a00a99be467c.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 2"
     },
     {
       "id": "testimonial-3",
-      "imageUrl": "https://i.imgur.com/mK1GskW.png",
-      "imageHint": "testimonial screenshot",
-      "description": "Depoimento sobre o método.",
-      "comment": "“O design e a organização que aprendi a montar no Discord geram uma autoridade instantânea. Os membros entram e já percebem que o ambiente é profissional. Isso facilita DEMAIS a venda da oferta interna. Impecável.”"
+      "imageUrl": "https://i.postimg.cc/q76WQFkG/1d24564a-d8ab-4085-baf9-59744c6ba9c3.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 3"
     },
     {
       "id": "testimonial-4",
-      "imageUrl": "https://i.imgur.com/NG2D4Jf.png",
-      "imageHint": "testimonial screenshot",
-      "description": "Depoimento sobre o método.",
-      "comment": "“Isso aqui não é um curso, é a planta de uma máquina de dinheiro. Valeu cada centavo. Parei de depender de algoritmo e agora eu mando no meu próprio jogo. O investimento se pagou em poucos dias.”"
+      "imageUrl": "https://i.postimg.cc/FRt86xzR/ec91b514-b380-4211-8897-afcb28d34bdd.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 4"
     },
     {
       "id": "testimonial-5",
-      "imageUrl": "https://i.imgur.com/pqnfEQt.png",
-      "imageHint": "testimonial screenshot",
-      "description": "Depoimento sobre o método.",
-      "comment": "“A retenção dos meus membros aumentou absurdamente. O sistema que aprendi a criar é tão fácil de navegar que as pessoas ficam ativas por muito mais tempo. Chega de comunidade fantasma!”"
-    },
-    {
-      "id": "testimonial-6",
-      "imageUrl": "https://i.imgur.com/1iExjmn.png",
-      "imageHint": "testimonial screenshot",
-      "description": "Depoimento sobre o método.",
-      "comment": "“Eu estava perdido, tentando fazer a comunidade 'viralizar'. Depois de aplicar o método, entendi que o jogo é outro. Construí meu ativo, minha estrutura fechada, e agora tenho lucro previsível. Simplesmente transformador.”"
+      "imageUrl": "https://i.postimg.cc/Y0RPhK3c/Chat-GPT-Image-Jul-6-2026-08-45-13-PM.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 5"
     }
   ]
 }
