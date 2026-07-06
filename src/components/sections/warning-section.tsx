@@ -1,3 +1,4 @@
+
 "use client"
 
 import { CtaButton } from "@/components/cta-button"
@@ -19,7 +20,7 @@ const notForYou = [
 
 export function WarningSection() {
   const handleCtaClick = () => {
-    const checkoutUrl = "https://compraonlineseguura.com/c/b0ae0417fa"
+    const checkoutUrl = "https://compraonlineseguura.com/c/a45507188e"
     window.location.href = appendCurrentParams(checkoutUrl)
   }
 

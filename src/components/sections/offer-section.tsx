@@ -17,7 +17,7 @@ const includedItems = [
 
 export function OfferSection() {
   const handleCtaClick = () => {
-    const checkoutUrl = "https://compraonlineseguura.com/c/b0ae0417fa"
+    const checkoutUrl = "https://compraonlineseguura.com/c/a45507188e"
     window.location.href = appendCurrentParams(checkoutUrl)
   }
 
@@ -25,7 +25,7 @@ export function OfferSection() {
     <section id="offer" className="w-full scroll-mt-20 px-4 md:px-0">
       <div className="container mx-auto max-w-3xl">
         <h3 className="mb-4 text-center text-sm font-bold uppercase tracking-widest text-primary">
-          OPERAÇÃO LIMITADA
+          Apenas 50 acessos disponíveis com esse valor promocional
         </h3>
         <Card className="relative overflow-hidden border-2 border-primary bg-card shadow-2xl shadow-primary/20 scale-90 md:scale-100 transition-transform duration-300">
           <div className="absolute top-0 left-0 -z-10 h-full w-full bg-grid-primary/[0.07]"></div>
@@ -66,6 +66,9 @@ export function OfferSection() {
                     <p className="text-base md:text-xl font-black uppercase tracking-tighter text-foreground">
                       COMO ESCALAR COM META ADS
                     </p>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Bônus opcional para quem já estiver vendendo e quiser escalar mais rápido — não é necessário para começar nem para os primeiros resultados.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -96,10 +99,10 @@ export function OfferSection() {
               </CtaButton>
             </div>
             <p className="mt-6 text-sm text-muted-foreground md:text-base">
-              Preço ridiculamente baixo pelo nível de sistema entregue.
+              Preço promocional válido para os próximos acessos.
               <br />
               <span className="font-semibold text-foreground">
-                E não vai ficar assim para sempre.
+                O valor tende a subir conforme a demanda aumenta.
               </span>
             </p>
           </CardContent>
