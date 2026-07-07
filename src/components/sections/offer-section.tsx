@@ -61,7 +61,7 @@ export function OfferSection() {
                   </div>
                   <div className="space-y-2">
                     <p className="text-base md:text-xl font-black uppercase tracking-tighter text-foreground">
-                      COMO FAZER AS PRIMEIRAS VENDAS EM 7 DIAS
+                      COMO FAZER AS PRIMEIRAS VENDAS INICIAIS
                     </p>
                     <p className="text-base md:text-xl font-black uppercase tracking-tighter text-foreground">
                       COMO ESCALAR COM META ADS
@@ -82,12 +82,12 @@ export function OfferSection() {
 
             <div className="my-6">
               <span className="text-5xl font-extrabold sm:text-6xl md:text-8xl">
-                R$ 27,90
+                R$ 37,90
               </span>
             </div>
             <p className="text-lg font-semibold text-muted-foreground">
               Pagamento único ou{" "}
-              <span className="text-foreground">12x de R$ 2,89</span>
+              <span className="text-foreground">12x de R$ 3,92</span>
             </p>
 
             <div className="mt-8">
