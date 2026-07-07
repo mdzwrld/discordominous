@@ -17,10 +17,11 @@ import { GuaranteeSection } from "@/components/sections/guarantee-section"
 import { SocialProofSection } from "@/components/sections/social-proof-section"
 import { FadeIn } from "@/components/fade-in"
 import { CtaButton } from "@/components/cta-button"
+import { FixedMobileCta } from "@/components/fixed-mobile-cta"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-background text-foreground overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center bg-background text-foreground overflow-x-hidden pb-24 md:pb-0">
       <HeroSection />
       
       <div className="flex w-full flex-col items-center space-y-24 py-16 md:space-y-48 md:py-24">
@@ -103,6 +104,8 @@ export default function Home() {
       <footer className="container mx-auto px-4 py-16 text-center text-muted-foreground border-t border-border/10">
         <p>© 2025 Discord Dominous. Todos os direitos reservados.</p>
       </footer>
+
+      <FixedMobileCta />
     </main>
   )
 }
