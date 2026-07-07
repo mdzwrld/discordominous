@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ChevronDown, CheckCircle2 } from "lucide-react"
+import Image from "next/image"
 
 const bullets = [
   "Mesmo começando com poucos membros",
@@ -32,6 +33,19 @@ export function HeroSection() {
           <p className="mx-auto max-w-3xl text-xl font-black text-foreground md:text-3xl uppercase tracking-tighter">
             SEM PREJUÍZO ALGUM
           </p>
+
+          <div className="flex justify-center py-4">
+            <Image
+              src="https://i.imgur.com/EmUlo3B.png"
+              alt="Dashboard de Faturamento R$150.221,22"
+              width={800}
+              height={266}
+              className="rounded-xl border-2 border-primary/20 shadow-2xl shadow-primary/10"
+              data-ai-hint="dashboard graph"
+              priority
+            />
+          </div>
+
           <div className="mx-auto max-w-2xl border-y border-primary/20 py-4">
             <p className="text-lg italic text-muted-foreground">
               Enquanto milhões de jogadores usam o Discord apenas para conversar... <br/>
