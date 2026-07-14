@@ -28,6 +28,12 @@ const testimonials = [
   {
     image: PlaceHolderImages.find((p) => p.id === "testimonial-5"),
   },
+  {
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-6"),
+  },
+  {
+    image: PlaceHolderImages.find((p) => p.id === "testimonial-7"),
+  },
 ]
 
 export function SocialProofSection() {

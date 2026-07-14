@@ -41,6 +41,18 @@
       "imageUrl": "https://i.postimg.cc/Y0RPhK3c/Chat-GPT-Image-Jul-6-2026-08-45-13-PM.png",
       "imageHint": "testimonial result",
       "description": "Resultado real de aluno 5"
+    },
+    {
+      "id": "testimonial-6",
+      "imageUrl": "https://i.postimg.cc/RFTcYP9v/IMG-5413.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 6"
+    },
+    {
+      "id": "testimonial-7",
+      "imageUrl": "https://i.postimg.cc/BnDPyhc5/IMG-5382333.png",
+      "imageHint": "testimonial result",
+      "description": "Resultado real de aluno 7"
     }
   ]
 }
